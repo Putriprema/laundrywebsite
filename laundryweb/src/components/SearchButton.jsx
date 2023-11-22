@@ -9,7 +9,6 @@ const FAQ = () => {
   return (
     <div>
       <div className='Search' style={{ display: 'flex', flexDirection: 'column', alignItems: 'center', paddingTop: '70px' }}>
-        <h1>Frequently asked questions</h1>
         <div className="form-wrapper" style={{ display: 'flex', alignItems: 'center' }}>
           <input
             type="text"
