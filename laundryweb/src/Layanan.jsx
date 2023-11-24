@@ -3,24 +3,22 @@ import React, { useState } from 'react';
 import Navbar from './components/Navbar';
 import Footer from './components/Footer';
 import Button from 'react-bootstrap/Button';
-<<<<<<< HEAD
 import Cards from './components/Cards'
 import SearchButton from './components/SearchButton'
-=======
-import Cards from './components/Cards';
+
 import new_cards from './assets/NewCards';
->>>>>>> a86ef04eec57d0a5d9e3bfe51d17b037fe4f12a9
+
 
 const Layanan = () => {
   const [text, setText] = useState('');
   return (
     <div>
       <Navbar />
-<<<<<<< HEAD
+
       <SearchButton/>
       <h1 className="text-center" style={{ marginTop: "5%", color: 'black', fontSize: '24pt', fontWeight: 'bold' }}>Layanan Laundry yang Tersedia</h1>
       <Cards/>
-=======
+
       <div className='Search' style={{ display: 'flex', flexDirection: 'column', alignItems: 'center'}}>
         <div className="form-wrapper" style={{ display: 'flex', alignItems: 'center' }}>
           <input
@@ -59,7 +57,7 @@ const Layanan = () => {
           ))}
         </div>
       </div>
->>>>>>> a86ef04eec57d0a5d9e3bfe51d17b037fe4f12a9
+
       <Footer />
     </div>
   );
