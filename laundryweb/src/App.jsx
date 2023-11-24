@@ -10,12 +10,13 @@ import TentangKami from './TentangKami';
 import Artikel1 from './Artikel1';
 import Artikel2 from './Artikel2';
 import Artikel3 from './Artikel3';
+import Dashboard from './Dashboard';
 const App = () => {
   return (
     <Router>
       <Routes>
         {/* kalo ada eror yang ga keliatan pagenya itu krn /homenya ygn belum ke isi/ atau ke refresh :( */}
-        <Route path='/' element={<Home/>}></Route>
+        <Route path='/Home' element={<Home/>}></Route>
         <Route path='/Blog' element={<Blog/>}></Route>
         <Route path='/Informasi' element={<Informasi/>}></Route>
         <Route path='/FAQ' element={<FAQ/>}></Route>
@@ -24,6 +25,8 @@ const App = () => {
         <Route path='/Artikel1' element={<Artikel1/>}></Route>
         <Route path='/Artikel2' element={<Artikel2/>}></Route>
         <Route path='/Artikel3' element={<Artikel3/>}></Route>
+        <Route path='/Artikel3' element={<Artikel3/>}></Route>
+        <Route path='/Dashboard' element={<Dashboard/>}></Route>
       </Routes>
     </Router>
   );
