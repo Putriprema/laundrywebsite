@@ -63,18 +63,20 @@ function Informasi() {
       </div>
       <div className='card-bottom'>
         <h3>{item.capt}</h3>
+        <Link to={`/Artikel/${item.slug}`}>{item.category}</Link>
+
         {/* Tautan ke artikel kecuali untuk id: 2 dan id: 3 */}
-        {(item.id !== 2 && item.id !== 3) && (
+        {/* {(item.id !== 2 && item.id !== 3) && (
           <Link to={`/Artikel${item.id}`}>{item.category}</Link>
-        )}
+        )} */}
         {/* Tautan ke artikel 2 hanya pada item dengan id: 2 */}
-        {item.id === 2 && (
+        {/* {item.id === 2 && (
           <Link to={`/Artikel2`}>{item.category}</Link>
-        )}
+        )} */}
         {/* Tautan khusus ke artikel 3 hanya pada item dengan id: 3 */}
-        {item.id === 3 && (
+        {/* {item.id === 3 && (
           <Link to={`/Artikel3`}>{item.category}</Link>
-        )}
+        )} */}
       </div>
     </div>
   ))}
