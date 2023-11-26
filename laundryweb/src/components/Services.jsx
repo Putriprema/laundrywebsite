@@ -4,7 +4,10 @@ import '../components/Service.css';
 import logo from "../assets/logo.jpeg";
 import putri from "../assets/putri.jpeg";
 import arif from "../assets/arif.jpeg";
-
+import kurniawan from "../assets/kurniawan.jpeg";
+import wanda from "../assets/wanda.jpeg";
+import ridho from "../assets/ridho.jpeg";
+import farida from "../assets/farida.jpeg";
 
 function Services() { 
   return (
@@ -14,19 +17,18 @@ function Services() {
       <div className='container'>
         <div className='row'>
           <div className='col-md-12 text-center'>
-            <h2 className='section-title'>
+            <h2 className='section-title'style={{fontSize:'27pt',fontWeight:'bold'}} >
              Anggota Tim Kami
             </h2>
-            <p className='section-subtitle'style={{ marginTop: '3%' }}>
+            <p className='section-subtitle'style={{ marginTop: '3%', fontSize:'16pt' }}>
             Tim LaundryEasey, tim bersemangat yang bertekad untuk menghadirkan layanan laundry yang terjangkau, handal, dan nyaman bagi pelanggan kami.
             Setiap anggota tim kami berdedikasi untuk memberikan layanan yang berkualitas tinggi dan memastikan setiap pakaian Anda dirawat dengan baik.
             </p>
           </div>
-
           {/* ridho */}
           <div className='col-sm-6 col-md-4'>
             <div className='team-item'>
-            <img src={logo} className='item-img' alt="pict" />
+            <img src={ridho} className='item-img' alt="pict" />
             <h3>Ridho</h3>
             <div className='team-info'>
               <p> Hustler</p>
@@ -35,7 +37,7 @@ function Services() {
                   <li><a href='#' className='ig'><ion-icon name="mail-outline"></ion-icon>
                   <i className='fa fa-ig'></i>
                   </a></li>
-                  <li><a href='#' className='email'><ion-icon name="logo-instagram"></ion-icon>
+                  <li><a href='https://www.instagram.com/_neonea_/?hl=id' className='email'><ion-icon name="logo-instagram"></ion-icon>
                   <i className='fa fa-email'></i>
                   </a></li>
               </ul>
@@ -46,7 +48,7 @@ function Services() {
           {/* wanda */}
           <div className='col-sm-6 col-md-4'>
             <div className='team-item'>
-            <img src={logo} className='item-img' alt="pict" />
+            <img src={wanda} className='item-img' alt="pict" />
             <h3>Wanda</h3>
             <div className='team-info'>
               <p>Hipster</p>
@@ -55,7 +57,7 @@ function Services() {
                   <li><a href='#' className='ig'><ion-icon name="mail-outline"></ion-icon>
                   <i className='fa fa-ig'></i>
                   </a></li>
-                  <li><a href='#' className='email'><ion-icon name="logo-instagram"></ion-icon>
+                  <li><a href='https://www.instagram.com/wndty__/' className='email'><ion-icon name="logo-instagram"></ion-icon>
                   <i className='fa fa-email'></i>
                   </a></li>
               </ul>
@@ -66,7 +68,7 @@ function Services() {
           {/* farida */}
           <div className='col-sm-6 col-md-4'>
             <div className='team-item'>
-            <img src={logo} className='item-img' alt="pict" />
+            <img src={farida} className='item-img' alt="pict" />
             <h3>Farida</h3>
             <div className='team-info'>
               <p>Hispter</p>
@@ -75,8 +77,8 @@ function Services() {
                   <li><a href='#' className='ig'><ion-icon name="mail-outline"></ion-icon>
                   <i className='fa fa-ig'></i>
                   </a></li>
-                  <li><a href='#' className='email'><ion-icon name="logo-instagram"></ion-icon>
-                  <i className='fa fa-email'></i>
+                  <li><a href='https://www.instagram.com/anisa27616' className='email'><ion-icon name="logo-instagram"></ion-icon>
+                  <i className='fa fa-ig'></i>
                   </a></li>
               </ul>
             </div>
@@ -92,7 +94,7 @@ function Services() {
           {/* kurniawan */}
           <div className='col-sm-6 col-md-4'>
             <div className='team-item'>
-            <img src={logo} className='item-img' alt="pict" />
+            <img src={kurniawan} className='item-img' alt="pict" />
             <h3>Kurniawan</h3>
             <div className='team-info'>
               <p>Hacker</p>
@@ -103,7 +105,7 @@ function Services() {
                   <li><a href='#' className='ig'><ion-icon name="mail-outline"></ion-icon>
                   <i className='fa fa-ig'></i>
                   </a></li>
-                  <li><a href='#' className='email'><ion-icon name="logo-instagram"></ion-icon>
+                  <li><a href='https://www.instagram.com/wann.monn/' className='email'><ion-icon name="logo-instagram"></ion-icon>
                   <i className='fa fa-email'></i>
                   </a></li>
               </ul>

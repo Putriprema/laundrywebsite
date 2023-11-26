@@ -1,3 +1,4 @@
+/* eslint-disable no-unused-vars */
 import React from 'react';
 import { Col } from 'react-bootstrap';
 import Navbar2 from './components/Navbar2';
