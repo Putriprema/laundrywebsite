@@ -5,12 +5,24 @@ import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 import './Slickreview.css'; 
 import { dataReview } from '../data/Review';
-
+import AOS from 'aos'; //aos link untuk animation
+import 'aos/dist/aos.css'; //aos link untuk animation
+import { useEffect } from "react";
 import {Link} from 'react-router-dom';
 
 
 
 function Informasi() {
+
+      // bagian inisialisasi
+      useEffect(() =>{
+        AOS.init({
+          once: true,
+          duration : 1000
+        }) 
+      }, [])
+
+      
     const settings = {
       dots: true,
       infinite: false,
@@ -60,10 +72,10 @@ function Informasi() {
  
   return (
     <>
-      <div className='Headline' style={{ display: 'flex', flexDirection: 'column', alignItems: 'center', paddingTop: '120px' }}>
+      <div data-aos="fade-up" className='Headline' style={{ display: 'flex', flexDirection: 'column', alignItems: 'center', paddingTop: '120px' }}>
         <h1 style={{ fontWeight: 'bold', fontSize:'24pt' }}>Review Pelanggan Kami</h1>
       </div>
-      <div className='Review'>
+      <div data-aos="fade-up" className='Review'>
       <Slider {...settings}>
       {dataReview.map((item) => (
     <div className='card' key={item.id}>

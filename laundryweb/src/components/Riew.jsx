@@ -4,10 +4,22 @@ import Card from "react-bootstrap/Card";
 import Larasati from "../assets/Larasati.png";
 import Rangga from "../assets/rangga.png";
 import Sarah from "../assets/sarah.png";
+import AOS from 'aos'; //aos link untuk animation
+import 'aos/dist/aos.css'; //aos link untuk animation
+import { useEffect } from "react";
+
 const Riew = () => {
+     // bagian inisialisasi
+     useEffect(() =>{
+      AOS.init({
+        once: true,
+        duration : 1000
+      }) 
+    }, [])
+
   return (
     <div>
-      <h1
+      <h1 data-aos="fade-up"
         className=" justify-center text-center font-bold text-[300px]"
         style={{
           color: "black",
@@ -19,9 +31,9 @@ const Riew = () => {
       >
         Riew Pelanggan Kami
       </h1>
-      <div className="d-flex justify-content-around">
+      <div data-aos="fade-up" className="d-flex justify-content-around">
         {/* Review 1 */}
-        <Card
+        <Card data-aos="fade-up"
           style={{
             backgroundColor: "#D9EAF4",
             width: "18rem",
@@ -30,7 +42,7 @@ const Riew = () => {
             margin: "0 10px",
           }}
         >
-          <div
+          <div 
             style={{
               display: "flex",
               justifyContent: "center",
@@ -59,7 +71,7 @@ const Riew = () => {
         </Card>
 
         {/* Review 2 */}
-        <Card
+        <Card data-aos="fade-up"
           style={{
             backgroundColor: "#D9EAF4",
             width: "18rem",
@@ -97,7 +109,7 @@ const Riew = () => {
         </Card>
 
         {/* Review 3 */}
-        <Card
+        <Card data-aos="fade-up"
           style={{
             backgroundColor: "#D9EAF4",
             width: "18rem",

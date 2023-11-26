@@ -4,18 +4,30 @@ import Card from "react-bootstrap/Card";
 import fitur1 from "../assets/fitur1.png";
 import fitur2 from "../assets/fitur2.png";
 import fitur3 from "../assets/fitur3.png";
+import AOS from 'aos'; //aos link untuk animation
+import 'aos/dist/aos.css'; //aos link untuk animation
+import { useEffect } from "react";
 
 const Home1 = () => {
+
+   // bagian inisialisasi
+   useEffect(() =>{
+    AOS.init({
+      once: true,
+      duration : 1000
+    }) 
+  }, [])
+
   return (
     <div>
-     <h1 className="text-center flex justify-center items-center" style={{ marginTop: "10%", color: 'black', fontSize: '35pt', fontWeight: 'bold' }}>Alasan mengapa memilih kami</h1>
-     <p className="text-center flex justify-center items-center" style={{ marginTop: "1%", fontSize: '16pt', fontWeight: 'normal'}}>Kami bekerja sama dengan penyedia jasa laundry yang telah teruji dan terpercaya, memastikan kualitas layanan yang dijamin untuk setiap pengguna</p>
+     <h1 data-aos="fade-up" className="text-center flex justify-center items-center" style={{ marginTop: "10%", color: 'black', fontSize: '35pt', fontWeight: 'bold' }}>Alasan mengapa memilih kami</h1>
+     <p data-aos="fade-up" className="text-center flex justify-center items-center" style={{ marginTop: "1%", fontSize: '16pt', fontWeight: 'normal'}}>Kami bekerja sama dengan penyedia jasa laundry yang telah teruji dan terpercaya, memastikan kualitas layanan yang dijamin untuk setiap pengguna</p>
       {/* bagian card kelebihan kami */}
-      <div
+      <div data-aos="fade-up"
         className="d-flex justify-content-around"
         style={{ marginTop: "5%" }}>
         {/* layanan 1 */}
-        <Card
+        <Card data-aos="fade-up"
           style={{
             width: "18rem",
             boxShadow: "0 4px 8px 0 rgba(0,0,0,0.2)",
@@ -51,7 +63,7 @@ const Home1 = () => {
         </Card>
 
         {/* kelebihan 2 */}
-        <Card
+        <Card data-aos="fade-up"
           style={{
             width: "18rem",
             boxShadow: "0 4px 8px 0 rgba(0,0,0,0.2)",
@@ -90,7 +102,7 @@ const Home1 = () => {
         </Card>
 
         {/* kelebihan 3 */}
-        <Card
+        <Card data-aos="fade-up"
           style={{
             width: "18rem",
             boxShadow: "0 4px 8px 0 rgba(0,0,0,0.2)",

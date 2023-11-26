@@ -5,16 +5,27 @@ import Button from 'react-bootstrap/Button';
 import cucikering from '../assets/cucikering.png';
 import cucisetrika from '../assets/cucisetrika.png';
 import cucikilat from '../assets/cucikilat.png';
-
+import AOS from 'aos'; //aos link untuk animation
+import 'aos/dist/aos.css'; //aos link untuk animation
+import { useEffect } from "react";
 const LayananKami = () => {
+  
+   // bagian inisialisasi
+   useEffect(() =>{
+    AOS.init({
+      once: true,
+      duration : 1000
+    }) 
+  }, [])
+
   return (
     <div>
-      <h1 className="text-center font-bold text-6xl" style={{ color: 'black', marginTop: '200px' }}>Layanan Kami</h1>
-      <p className="text-center text-lg" style={{ marginTop: '20px' }}>Silahkan Pilih layanan yang Dibutuhkan</p>
-      <div className="d-flex justify-content-around align-items-center" style={{ marginTop: '70px' }}>
+      <h1 data-aos="fade-up" className="text-center font-bold text-6xl" style={{ color: 'black', marginTop: '200px' }}>Layanan Kami</h1>
+      <p  data-aos="fade-up" className="text-center text-lg" style={{ marginTop: '20px' }}>Silahkan Pilih layanan yang Dibutuhkan</p>
+      <div data-aos="fade-up"  className="d-flex justify-content-around align-items-center" style={{ marginTop: '70px' }}>
             {/* layanan cuci kering*/}
-            <Card style={{ width: '30rem', boxShadow: '0 4px 8px 0 rgba(0,0,0,0.2)', borderRadius: '20px', margin: '0 10px' }}>
-          <div style={{ display: 'flex', justifyContent: 'center' }}>
+            <Card data-aos="fade-up"  style={{ width: '30rem', boxShadow: '0 4px 8px 0 rgba(0,0,0,0.2)', borderRadius: '20px', margin: '0 10px' }}>
+          <div data-aos="fade-up" style={{ display: 'flex', justifyContent: 'center' }}>
             <Card.Img variant="top" src={cucikering} alt="cucikering" style={{
               width: '500px',
               height: '300px',
@@ -30,7 +41,7 @@ const LayananKami = () => {
         </Card>
    
         {/* layanan cuci setrika*/}
-        <Card style={{ width: '30rem', boxShadow: '0 4px 8px 0 rgba(0,0,0,0.2)', borderRadius: '20px', margin: '0 10px' }}>
+        <Card data-aos="fade-up" style={{ width: '30rem', boxShadow: '0 4px 8px 0 rgba(0,0,0,0.2)', borderRadius: '20px', margin: '0 10px' }}>
           <div style={{ display: 'flex', justifyContent: 'center' }}>
             <Card.Img variant="top" src={cucisetrika} alt="cucisetrika" style={{
               width: '500px',
@@ -47,7 +58,7 @@ const LayananKami = () => {
         </Card>
   
             {/* layanan cuci kilat*/}
-            <Card style={{ width: '30rem', boxShadow: '0 4px 8px 0 rgba(0,0,0,0.2)', borderRadius: '20px', margin: '0 10px' }}>
+            <Card data-aos="fade-up" style={{ width: '30rem', boxShadow: '0 4px 8px 0 rgba(0,0,0,0.2)', borderRadius: '20px', margin: '0 10px' }}>
           <div style={{ display: 'flex', justifyContent: 'center' }}>
             <Card.Img variant="top" src={cucikilat} alt="cucisetrika" style={{
               width: '500px',

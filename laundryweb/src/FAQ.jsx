@@ -4,8 +4,20 @@ import Button from 'react-bootstrap/Button';
 import Navbar from './components/Navbar';
 import Footer from './components/Footer';
 import { AiOutlineCaretUp, AiOutlineCaretDown } from "react-icons/ai";
+import AOS from 'aos'; //aos link untuk animation
+import 'aos/dist/aos.css'; //aos link untuk animation
+import { useEffect } from "react";
 
 const FAQ = () => {
+   
+    // bagian inisialisasi
+    useEffect(() =>{
+      AOS.init({
+        once: true,
+        duration : 1000
+      }) 
+    }, [])
+
   const [text, setText] = useState('');
   const [isOpen1, setIsOpen1] = useState(false);
   const [isOpen2, setIsOpen2] = useState(false);
@@ -17,8 +29,8 @@ const FAQ = () => {
   return (
     <div>
       <Navbar />
-      <div className='Search' style={{ display: 'flex', flexDirection: 'column', alignItems: 'center', paddingTop: '70px' }}>
-        <h1>Frequently asked questions</h1>
+      <div data-aos="fade-up" className='Search' style={{ display: 'flex', flexDirection: 'column', alignItems: 'center', paddingTop: '70px' }}>
+        <h1 data-aos="fade-up">Frequently asked questions</h1>
         <div className="form-wrapper" style={{ display: 'flex', alignItems: 'center' }}>
           <input
             type="text"
@@ -37,12 +49,12 @@ const FAQ = () => {
               marginTop: '70px'
             }}
           />
-          <Button className="ml-2 text-white" style={{ marginTop: '70px', width: '50px', height: '50px', backgroundColor: '#327094', transition: 'background-color 0.5s', boxShadow: '2px 2px 4px rgba(1, 1, 1, 1.2)', display: 'flex', alignItems: 'center', justifyContent: 'center' }}>
-            <ion-icon name="search-outline" style={{ width: '20px', height: '20px', fontWeight: 'bold', display: 'block' }}></ion-icon>
+          <Button data-aos="fade-up" className="ml-2 text-white" style={{ marginTop: '70px', width: '50px', height: '50px', backgroundColor: '#327094', transition: 'background-color 0.5s', boxShadow: '2px 2px 4px rgba(1, 1, 1, 1.2)', display: 'flex', alignItems: 'center', justifyContent: 'center' }}>
+            <ion-icon data-aos="fade-up" name="search-outline" style={{ width: '20px', height: '20px', fontWeight: 'bold', display: 'block' }}></ion-icon>
           </Button>
         </div>
           {/* FAQ 1 */}
-          <button 
+          <button data-aos="fade-up"
           onClick={() => setIsOpen1(prev => !prev)}
           className='bg-white p-4 w-10/12 flex ml-20 font-bold text-lg rounded-lg tracking-wider border-4 border-transparent active:border-white duration-300 active:text-white shadow-md'
           style={{ justifyContent: 'space-between', marginTop:'80px', marginRight:'5%' }}
@@ -66,7 +78,7 @@ const FAQ = () => {
         )}
 
         {/* FAQ 2 */}
-        <button 
+        <button data-aos="fade-up"
         onClick={() => setIsOpen2(prev => !prev)}
         className='bg-white p-4 w-10/12 flex ml-20 font-bold text-lg rounded-lg tracking-wider border-4 border-transparent active:border-white duration-300 active:text-white shadow-md'
         style={{ justifyContent: 'space-between',  marginRight:'5%', marginTop: '20px' }}>
@@ -89,7 +101,7 @@ const FAQ = () => {
         )}
 
          {/* FAQ 3 */}
-         <button 
+         <button data-aos="fade-up"
           onClick={() => setIsOpen3(prev => !prev)}
           className='bg-white p-4 w-10/12 flex ml-20 font-bold text-lg rounded-lg tracking-wider border-4 border-transparent active:border-white duration-300 active:text-white shadow-md'
           style={{ justifyContent: 'space-between', marginTop:'20px', marginRight:'5%' }}
@@ -113,7 +125,7 @@ const FAQ = () => {
         )}
 
          {/* FAQ 4 */}
-         <button 
+         <button data-aos="fade-up"
           onClick={() => setIsOpen4(prev => !prev)}
           className='bg-white p-4 w-10/12 flex ml-20 font-bold text-lg rounded-lg tracking-wider border-4 border-transparent active:border-white duration-300 active:text-white shadow-md'
           style={{ justifyContent: 'space-between', marginTop:'20px', marginRight:'5%' }}
@@ -137,7 +149,7 @@ const FAQ = () => {
         )}
 
          {/* FAQ 5 */}
-         <button 
+         <button data-aos="fade-up"
           onClick={() => setIsOpen5(prev => !prev)}
           className='bg-white p-4 w-10/12 flex ml-20 font-bold text-lg rounded-lg tracking-wider border-4 border-transparent active:border-white duration-300 active:text-white shadow-md'
           style={{ justifyContent: 'space-between', marginTop:'20px', marginRight:'5%' }}
@@ -162,7 +174,7 @@ const FAQ = () => {
         )}
 
          {/* FAQ 6 */}
-         <button 
+         <button data-aos="fade-up"
           onClick={() => setIsOpen6(prev => !prev)}
           className='bg-white p-4 w-10/12 flex ml-20 font-bold text-lg rounded-lg tracking-wider border-4 border-transparent active:border-white duration-300 active:text-white shadow-md'
           style={{ justifyContent: 'space-between', marginTop:'20px', marginRight:'5%' }}

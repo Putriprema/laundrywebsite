@@ -9,8 +9,19 @@ import './Informasi.css';
 import {Link} from 'react-router-dom';
 import Footer from './components/Footer';
 import Promobulan from './components/Promobulan'; 
+import AOS from 'aos'; //aos link untuk animation
+import 'aos/dist/aos.css'; //aos link untuk animation
+import { useEffect } from "react";
 
 function Informasi() {
+    // bagian inisialisasi
+    useEffect(() =>{
+      AOS.init({
+        once: true,
+        duration : 1000
+      }) 
+    }, [])
+
   const settings = {
     dots: true,
     infinite: false,
@@ -50,11 +61,11 @@ function Informasi() {
   return (
     <>
       <Navbar/>
-      <div className='Headline' style={{ display: 'flex', flexDirection: 'column', alignItems: 'center', paddingTop: '70px' }}>
+      <div data-aos="fade-up" className='Headline' style={{ display: 'flex', flexDirection: 'column', alignItems: 'center', paddingTop: '70px' }}>
         <h1 style={{ fontWeight: 'bold', fontSize:'24pt' }}>Temukan Informasi Yang Anda Cari Seputar Laundry</h1>
       </div>
-      <div className='App'>
-      <Slider {...settings}>
+      <div data-aos="fade-up"className='App'>
+      <Slider  {...settings}>
   {dataDigitalBestSeller.map((item) => (
     <div className='card' key={item.id}>
       <div className='card-top'>
@@ -64,19 +75,6 @@ function Informasi() {
       <div className='card-bottom'>
         <h3>{item.capt}</h3>
         <Link to={`/Artikel/${item.slug}`}>{item.category}</Link>
-
-        {/* Tautan ke artikel kecuali untuk id: 2 dan id: 3 */}
-        {/* {(item.id !== 2 && item.id !== 3) && (
-          <Link to={`/Artikel${item.id}`}>{item.category}</Link>
-        )} */}
-        {/* Tautan ke artikel 2 hanya pada item dengan id: 2 */}
-        {/* {item.id === 2 && (
-          <Link to={`/Artikel2`}>{item.category}</Link>
-        )} */}
-        {/* Tautan khusus ke artikel 3 hanya pada item dengan id: 3 */}
-        {/* {item.id === 3 && (
-          <Link to={`/Artikel3`}>{item.category}</Link>
-        )} */}
       </div>
     </div>
   ))}
