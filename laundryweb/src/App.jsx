@@ -13,6 +13,7 @@ import Artikel1 from './Artikel1';
 import Artikel2 from './Artikel2';
 import Artikel3 from './Artikel3';
 import Artikel from "./Artikel";
+import Loginpelangganmintra from "./Loginpelangganmintra";
 const App = () => {
   return (
     <Router>
@@ -28,6 +29,7 @@ const App = () => {
         <Route path='/Artikel1' element={<Artikel1/>}></Route>
         <Route path='/Artikel2' element={<Artikel2/>}></Route>
         <Route path='/Artikel3' element={<Artikel3/>}></Route>
+        <Route path='/Loginpelangganmintra' element={<Loginpelangganmintra/>}></Route>
       </Routes>
     </Router>
   );
