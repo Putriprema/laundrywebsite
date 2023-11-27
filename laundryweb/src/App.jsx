@@ -14,6 +14,11 @@ import Artikel2 from './Artikel2';
 import Artikel3 from './Artikel3';
 import Artikel from "./Artikel";
 import Loginpelangganmintra from "./Loginpelangganmintra";
+import Login from "./Login";
+import Dash from "./Dash";
+import Dashtrans from "./Dashtrans";
+
+
 const App = () => {
   return (
     <Router>
@@ -30,6 +35,9 @@ const App = () => {
         <Route path='/Artikel2' element={<Artikel2/>}></Route>
         <Route path='/Artikel3' element={<Artikel3/>}></Route>
         <Route path='/Loginpelangganmintra' element={<Loginpelangganmintra/>}></Route>
+        <Route path='/Login' element={<Login/>}></Route>
+        <Route path='/Dash' element={<Dash/>}></Route>
+        <Route path='/Dashtrans' element={<Dashtrans/>}></Route>
       </Routes>
     </Router>
   );

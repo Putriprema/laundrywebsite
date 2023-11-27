@@ -35,13 +35,13 @@ const Navbar2 = () => {
                     title={link.name}
                     id={link.name}
                     menuVariant="primary"
-                    style={{ color: 'white' }} // properti style untuk NavDropdown
+                    style={{ color: 'white' }} 
                   >
                     {link.dropdown.map((subLink) => (
                       <NavDropdown.Item
                         key={subLink.subName}
                         href={subLink.subLink}
-                        style={{ color: 'black' }} // Ubah warna teks F&aQ menjadi hitam
+                        style={{ color: 'black' }} 
                       >
                         {subLink.subName}
                       </NavDropdown.Item>
@@ -51,7 +51,7 @@ const Navbar2 = () => {
                   <Nav.Link
                     href={link.link} 
                     className="text-white navbar-link"
-                    style={{ color: 'black', transition: 'color 0.3s' }} // Ubah warna teks Layanan menjadi hitam
+                    style={{ color: 'black', transition: 'color 0.3s' }} 
                     onMouseEnter={(e) => {
                       e.target.style.color = "cyan";
                     }}
