@@ -20,7 +20,7 @@ const Home1 = () => {
 
   return (
     <div>
-     <h1 data-aos="fade-up" className="text-center flex justify-center items-center" style={{ marginTop: "10%", color: 'black', fontSize: '35pt', fontWeight: 'bold' }}>Alasan mengapa memilih kami</h1>
+     <h1 data-aos="fade-up" className="text-center flex justify-center items-center" style={{ marginTop: "10%", color: 'black', fontSize: '24pt', fontWeight: 'bold' }}>Alasan mengapa memilih kami</h1>
      <p data-aos="fade-up" className="text-center flex justify-center items-center" style={{ marginTop: "1%", fontSize: '16pt', fontWeight: 'normal'}}>Kami bekerja sama dengan penyedia jasa laundry yang telah teruji dan terpercaya, memastikan kualitas layanan yang dijamin untuk setiap pengguna</p>
       {/* bagian card kelebihan kami */}
       <div data-aos="fade-up"

@@ -20,8 +20,8 @@ const LayananKami = () => {
 
   return (
     <div>
-      <h1 data-aos="fade-up" className="text-center font-bold text-6xl" style={{ color: 'black', marginTop: '200px' }}>Layanan Kami</h1>
-      <p  data-aos="fade-up" className="text-center text-md" style={{ marginTop: '20px' }}>Silahkan Pilih layanan yang Dibutuhkan</p>
+      <h1 data-aos="fade-up" className="text-center font-bold" style={{ color: 'black', marginTop: '200px', fontSize:'24pt' }}>Layanan Kami</h1>
+      <p  data-aos="fade-up" className="text-center" style={{ marginTop: '20px', fontSize:'18pt' }}>Silahkan Pilih layanan yang Dibutuhkan</p>
       <div data-aos="fade-up"  className="d-flex justify-content-around align-items-center" style={{ marginTop: '70px' }}>
             {/* layanan cuci kering*/}
             <Card data-aos="fade-up"  style={{ width: '30rem', boxShadow: '0 4px 8px 0 rgba(0,0,0,0.2)', borderRadius: '20px', margin: '0 10px' }}>
