@@ -29,7 +29,9 @@ const Artikel = () => {
             <div dangerouslySetInnerHTML={{ __html: article.content }} />
           </div>
       </div>
+      <div className='pt-20'>
       <Footer />
+      </div>
     </>
   );
 };

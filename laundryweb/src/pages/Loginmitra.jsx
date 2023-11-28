@@ -43,7 +43,9 @@ function Loginmitra() {
           <img src={vector_2} alt="image" />
         </div>
       </div>
-      <Footer />
+      <div className="pt-20">
+        <Footer />
+      </div>
     </>
   );
 }

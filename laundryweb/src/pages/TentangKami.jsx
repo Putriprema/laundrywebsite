@@ -113,7 +113,9 @@ const TentangKami = () => {
           <Services/>
         </div>
       </div>
-      <Footer />
+      <div className="pt-20">
+        <Footer />
+      </div>
     </>
   )
 }
