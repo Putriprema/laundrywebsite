@@ -70,7 +70,7 @@ const Loginpelangganmintra = () => {
 
           {/* pelanggan */}
           <div data-aos="zoom-in">
-            <Button
+            <Link to="/Login"><Button
               variant="outline-info"
               className="ml-2 text-white"
               data-aos="zoom-in"
@@ -95,7 +95,7 @@ const Loginpelangganmintra = () => {
               }}
             >
               Pelanggan
-            </Button>
+            </Button></Link>
           </div>
 
           {/* mitra */}

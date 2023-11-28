@@ -25,6 +25,10 @@ const App = () => {
       <Routes>
         {/* kalo ada eror yang ga keliatan pagenya itu krn /homenya ygn belum ke isi/ atau ke refresh :( */}
         <Route path='/' element={<Home/>}></Route>
+<<<<<<< HEAD
+=======
+        <Route path='/Home' element={<Home/>}></Route>
+>>>>>>> defdf0c586c347a1698944259eff30a3afea4f97
         <Route path='/Blog' element={<Blog/>}></Route>
         <Route path='/Informasi' element={<Informasi/>}></Route>
         <Route path='/FAQ' element={<FAQ/>}></Route>
