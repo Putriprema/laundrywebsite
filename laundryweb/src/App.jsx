@@ -17,6 +17,8 @@ import Artikel from "./pages/Artikel";
 import Loginoption from "./pages/Loginoption";
 import Loginpelanggan from "./pages/Loginpelanggan";
 import Loginmitra from "./pages/Loginmitra";
+import Signuppelanggan from "./pages/Signuppelaggan";
+import Signupmitra from "./pages/Signupmitra";
 import Dash from "./pages/Dash";
 import Dashtrans from "./pages/Dashtrans";
 
@@ -41,6 +43,8 @@ const App = () => {
         <Route path='/Login-option' element={<Loginoption/>}></Route>
         <Route path='/Login-pelanggan' element={<Loginpelanggan/>}></Route>
         <Route path='/Login-mitra' element={<Loginmitra/>}></Route>
+        <Route path='/Sign-up-pelanggan' element={<Signuppelanggan/>}></Route>
+        <Route path='/Sign-up-mitra' element={<Signupmitra/>}></Route>
         <Route path='/Dash' element={<Dash/>}></Route>
         <Route path='/Dashtrans' element={<Dashtrans/>}></Route>
       </Routes>

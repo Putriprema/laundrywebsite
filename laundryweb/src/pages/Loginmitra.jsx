@@ -3,7 +3,7 @@ import React from 'react'
 import Navbar from "../components/Navbar";
 import Button from 'react-bootstrap/Button';
 import Form from 'react-bootstrap/Form';
-import vector_2 from '../assets/vector_login_mitra.png'
+import vector_1 from '../assets/vector_mitra_1.png'
 import { Link } from 'react-router-dom';
 import Footer from '../components/Footer';
 
@@ -31,16 +31,16 @@ function Loginmitra() {
             <Link style={{textDecoration: 'none'}} to='/'><p style={{color: 'black'}}>Lupa Kata Sandi?</p></Link>
           </Form.Group>
           <Form.Group>
-            <Button style={{padding: '8px 35px', borderRadius: '13px', boxShadow: '1px 3px 4px grey', marginBottom: '20px'}} variant="primary" type="submit">
+            <Link to='/'><Button style={{padding: '8px 35px', borderRadius: '13px', boxShadow: '1px 3px 4px grey', marginBottom: '20px'}} variant="primary" type="submit">
               Masuk
-            </Button>
+            </Button></Link>
           </Form.Group>
-          <Form.Group className="mb-3" controlId="formBasicPassword">
-            <p>Belum Punya Akun? <Link style={{textDecoration: 'none'}} to=""><span style={{color: 'black'}}>Daftar</span></Link></p>
+          <Form.Group className="mb-3" controlId="formBasicCheck">
+            <p>Belum Punya Akun? <Link style={{textDecoration: 'none'}} to="/Sign-up-mitra"><span style={{color: 'black'}}>Daftar</span></Link></p>
           </Form.Group>
         </Form>
         <div style={{display: 'flex', justifyContent: 'center', alignItems: 'center', width: '50%', height: '130vh'}} >
-          <img src={vector_2} alt="image" />
+          <img src={vector_1} alt="image" />
         </div>
       </div>
       <Footer />
