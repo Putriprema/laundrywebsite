@@ -16,7 +16,6 @@ const MyComponent = () => {
         <div style={{ width: '20%'}}>
           <Sidebar />
         </div>
-
         {/* Main Content */}
         <div style={{ width: '80%', padding: '20px', marginTop:'5%'}}>
           <h1>Transaksi</h1>
