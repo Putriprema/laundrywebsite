@@ -54,11 +54,24 @@ const CustomNavbar = () => {
                   <li
                     onMouseEnter={toggleDropdown}
                     onMouseLeave={closeDropdown}
-                    style={{ position: "relative", cursor: "pointer", marginTop:'1%' }}
+                    style={{
+                      position: "relative",
+                      cursor: "pointer",
+                      marginTop: "1%",
+                    }}
                   >
                     {link.name}
                     {showDropdown && (
-                      <ul style={{ position: "absolute", backgroundColor: "#D9EAF4", padding: "30px", zIndex: 1, marginTop:'10%', borderRadius:'10%' }}>
+                      <ul
+                        style={{
+                          position: "absolute",
+                          backgroundColor: "#D9EAF4",
+                          padding: "30px",
+                          zIndex: 1,
+                          marginTop: "10%",
+                          borderRadius: "10%",
+                        }}
+                      >
                         {link.dropdown.map((subLink) => (
                           <li key={subLink.subName}>
                             <Link
@@ -84,19 +97,19 @@ const CustomNavbar = () => {
                   </li>
                 ) : (
                   <Nav.Link
-                  href={link.link}
-                  className="text-white navbar-link  mb-1"
-                  style={{
-                    color: "black",
-                    transition: "color 0.3s",
-                  }}
-                  onMouseEnter={(e) => {
-                    e.target.style.color = "cyan";
-                  }}
-                  onMouseLeave={(e) => {
-                    e.target.style.color = "white";
-                  }}
-                >
+                    href={link.link}
+                    className="text-white navbar-link  mb-1"
+                    style={{
+                      color: "black",
+                      transition: "color 0.3s",
+                    }}
+                    onMouseEnter={(e) => {
+                      e.target.style.color = "cyan";
+                    }}
+                    onMouseLeave={(e) => {
+                      e.target.style.color = "white";
+                    }}
+                  >
                     {link.name}
                   </Nav.Link>
                 )}
@@ -105,14 +118,18 @@ const CustomNavbar = () => {
             <Nav.Link className="text-white">
               <ion-icon
                 name="notifications-outline"
-                style={{ fontSize: "24pt"}}
+                style={{ fontSize: "24pt" }}
               ></ion-icon>
             </Nav.Link>
             <Link to="/Loginpelangganmintra">
               <Button
                 variant="outline-info"
                 className="ml-2 text-white"
-                style={{ marginRight: "20px", marginTop: '10%', borderColor: "white" }}
+                style={{
+                  marginRight: "20px",
+                  marginTop: "10%",
+                  borderColor: "white",
+                }}
               >
                 Masuk
               </Button>
