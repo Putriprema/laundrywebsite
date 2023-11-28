@@ -120,8 +120,7 @@ const CustomNavbar = () => {
                 style={{ fontSize: "24pt" }}
               ></ion-icon>
             </Nav.Link>
-            <Link to="/Loginpelangganmintra">
-            </Link>
+            <Link to="/Loginpelangganmintra"></Link>
           </Nav>
         </Navbar.Collapse>
       </Container>
