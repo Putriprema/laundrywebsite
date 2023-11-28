@@ -10,7 +10,26 @@ import AOS from 'aos'; //aos link untuk animation
 import 'aos/dist/aos.css'; //aos link untuk animation
 import { useEffect } from "react";
 const Home = () => {
-   
+  useEffect(() => {
+    // Kode chat Crisp yang baru
+    window.$crisp = [];
+    window.CRISP_WEBSITE_ID = "d583988c-da94-4e03-a7aa-0d4faea374f3";
+    (function () {
+      let d = document;
+      let s = d.createElement("script");
+      s.src = "https://client.crisp.chat/l.js";
+      s.async = 1;
+      d.getElementsByTagName("head")[0].appendChild(s);
+    })();
+    
+    // Inisialisasi AOS
+    AOS.init({
+      once: true,
+      duration: 1000
+    });
+  }, []);
+ 
+
   // bagian inisialisasi
   useEffect(() =>{
     AOS.init({
