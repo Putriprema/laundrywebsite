@@ -1,9 +1,9 @@
 /* eslint-disable no-unused-vars */
 import React from "react";
 import { Col } from "react-bootstrap";
-import icon1 from "./assets/icon1.png";
-import transaksi from "./assets/transaksi.png";
-import "./Dasboard.css";
+import icon1 from "../assets/icon1.png";
+import transaksi from "../assets/transaksi.png";
+import "../pages/Dasboard.css";
 
 
 const Sidebar = () => {

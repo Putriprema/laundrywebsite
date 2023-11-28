@@ -5,7 +5,7 @@ import Footer2 from '../components/Footer2';
 import SearchButton from '../components/SearchButton';
 import Button from 'react-bootstrap/Button';
 import { Table } from 'react-bootstrap';
-import Sidebar from '../Sidebar';
+import Sidebar from '../components/Sidebar';
 
 const MyComponent = () => {
   return (
