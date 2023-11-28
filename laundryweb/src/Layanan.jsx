@@ -4,7 +4,7 @@ import Navbar from './components/Navbar';
 import Footer from './components/Footer';
 import Cards from './components/Cards'
 import SearchButton from './components/SearchButton'
-import new_cards from './assets/NewCards';
+import new_cards from './data/dataToko';
 import AOS from 'aos'; //aos link untuk animation
 import 'aos/dist/aos.css'; //aos link untuk animation
 import { useEffect } from "react";
