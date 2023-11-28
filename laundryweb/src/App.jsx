@@ -3,20 +3,20 @@ import React from 'react'
 import {BrowserRouter  as Router, Routes, Route} from 'react-router-dom';
 import AOS from 'aos'; //aos link untuk animation
 import 'aos/dist/aos.css'; //aos link untuk animation
-import Home from './Home'
-import Blog from './Blog'
-import Layanan from './Layanan';
-import Informasi from './informasi';
-import FAQ from './FAQ';
-import TentangKami from './TentangKami';
-import Artikel1 from './Artikel1';
-import Artikel2 from './Artikel2';
-import Artikel3 from './Artikel3';
-import Artikel from "./Artikel";
-import Loginpelangganmintra from "./Loginpelangganmintra";
-import Login from "./Login";
-import Dash from "./Dash";
-import Dashtrans from "./Dashtrans";
+import Home from './pages/Home'
+import Blog from './pages/Blog'
+import Layanan from './pages/Layanan';
+import Informasi from './pages/Informasi';
+import FAQ from './pages/FAQ';
+import TentangKami from './pages/TentangKami';
+import Artikel1 from './pages/Artikel1';
+import Artikel2 from './pages/Artikel2';
+import Artikel3 from './pages/Artikel3';
+import Artikel from "./pages/Artikel";
+import Loginpelangganmintra from "./pages/Loginpelangganmintra";
+import Login from "./pages/Login";
+import Dash from "./pages/Dash";
+import Dashtrans from "./pages/Dashtrans";
 
 
 const App = () => {
