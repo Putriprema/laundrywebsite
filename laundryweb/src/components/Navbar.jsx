@@ -121,7 +121,7 @@ const CustomNavbar = () => {
                 style={{ fontSize: "24pt" }}
               ></ion-icon>
             </Nav.Link>
-            <Link to="/Loginpelangganmintra">
+            <Link to="/Login-option">
               <Button
                 variant="outline-info"
                 className="ml-2 text-white"

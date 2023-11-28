@@ -10,7 +10,7 @@ import { useEffect } from "react";
 import { Link } from "react-router-dom";
 
 
-const Loginpelangganmintra = () => {
+const Loginoption = () => {
   const zoomInButton = (e) => {
     e.target.style.transform = "scale(1.1)";
   };
@@ -70,7 +70,7 @@ const Loginpelangganmintra = () => {
 
           {/* pelanggan */}
           <div data-aos="zoom-in">
-            <Link to="/Login"><Button
+            <Link to="/Login-pelanggan"><Button
               variant="outline-info"
               className="ml-2 text-white"
               data-aos="zoom-in"
@@ -100,7 +100,7 @@ const Loginpelangganmintra = () => {
 
           {/* mitra */}
           <div data-aos="zoom-in">
-            <Button
+            <Link to='/Login-mitra'><Button
               className="ml-2 text-white"
               variant="outline-warning"
               style={{
@@ -123,7 +123,7 @@ const Loginpelangganmintra = () => {
               }}
             >
               Mitra
-            </Button>
+            </Button></Link>
           </div>
         </div>
       </div>
@@ -132,4 +132,4 @@ const Loginpelangganmintra = () => {
   );
 };
 
-export default Loginpelangganmintra;
+export default Loginoption;

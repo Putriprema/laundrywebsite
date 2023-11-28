@@ -3,11 +3,11 @@ import React from 'react'
 import Navbar from "../components/Navbar";
 import Button from 'react-bootstrap/Button';
 import Form from 'react-bootstrap/Form';
-import vector from '../assets/vector_login.png'
+import vector_1 from '../assets/vector_login_pelanggan.png'
 import { Link } from 'react-router-dom';
 import Footer from '../components/Footer';
 
-function LoginPelanggan() {
+function Loginpelanggan() {
   return (
     <>
       <Navbar />
@@ -40,7 +40,7 @@ function LoginPelanggan() {
           </Form.Group>
         </Form>
         <div style={{display: 'flex', justifyContent: 'center', alignItems: 'center', width: '50%', height: '130vh', background: '#C4DAE8'}} >
-          <img src={vector} alt="image" />
+          <img src={vector_1} alt="image" />
         </div>
       </div>
       <Footer />
@@ -48,4 +48,4 @@ function LoginPelanggan() {
   );
 }
 
-export default LoginPelanggan;
+export default Loginpelanggan;

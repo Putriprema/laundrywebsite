@@ -13,8 +13,9 @@ import Artikel1 from './pages/Artikel1';
 import Artikel2 from './pages/Artikel2';
 import Artikel3 from './pages/Artikel3';
 import Artikel from "./pages/Artikel";
-import Loginpelangganmintra from "./pages/Loginpelangganmintra";
-import Login from "./pages/Login";
+import Loginoption from "./pages/Loginoption";
+import Loginpelanggan from "./pages/Loginpelanggan";
+import Loginmitra from "./pages/Loginmitra";
 import Dash from "./pages/Dash";
 import Dashtrans from "./pages/Dashtrans";
 
@@ -35,8 +36,9 @@ const App = () => {
         <Route path='/Artikel1' element={<Artikel1/>}></Route>
         <Route path='/Artikel2' element={<Artikel2/>}></Route>
         <Route path='/Artikel3' element={<Artikel3/>}></Route>
-        <Route path='/Loginpelangganmintra' element={<Loginpelangganmintra/>}></Route>
-        <Route path='/Login' element={<Login/>}></Route>
+        <Route path='/Login-option' element={<Loginoption/>}></Route>
+        <Route path='/Login-pelanggan' element={<Loginpelanggan/>}></Route>
+        <Route path='/Login-mitra' element={<Loginmitra/>}></Route>
         <Route path='/Dash' element={<Dash/>}></Route>
         <Route path='/Dashtrans' element={<Dashtrans/>}></Route>
       </Routes>
