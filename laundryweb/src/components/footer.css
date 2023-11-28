@@ -6,7 +6,6 @@
 /* editing bagian footer */
 .footer {
   background-color: #327094;
-  margin-top: 80px;
   display: flex;
   flex-direction: column;
   font-size: larger;
