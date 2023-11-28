@@ -47,7 +47,7 @@ const CustomNavbar = () => {
         </div>
         <Navbar.Toggle aria-controls="navbar-dark-example" />
         <Navbar.Collapse id="navbar-dark-example">
-          <Nav className="ml-auto" style={{ gap: "40px", fontSize: "16pt" }}>
+          <Nav className="ml-auto pt-2" style={{ gap: "40px", fontSize: "16pt" }}>
             {Links.map((link) => (
               <React.Fragment key={link.name}>
                 {link.dropdown ? (
@@ -65,11 +65,12 @@ const CustomNavbar = () => {
                       <ul
                         style={{
                           position: "absolute",
+                          left: "-45px",
                           backgroundColor: "#D9EAF4",
                           padding: "30px",
                           zIndex: 1,
-                          marginTop: "10%",
-                          borderRadius: "10%",
+                          marginTop: "10px",
+                          borderRadius: "10px",
                         }}
                       >
                         {link.dropdown.map((subLink) => (
@@ -115,20 +116,19 @@ const CustomNavbar = () => {
                 )}
               </React.Fragment>
             ))}
-            <Nav.Link className="text-white">
+            <Link style={{color: 'white', paddingTop: '6px'}} to= '/Notifikasi'>
               <ion-icon
                 name="notifications-outline"
                 style={{ fontSize: "24pt" }}
               ></ion-icon>
-            </Nav.Link>
-            <Link to="/Login-option">
+            </Link>
+            <Link style={{color: 'white'}} to="/Login-option">
               <Button
                 variant="outline-info"
-                className="ml-2 text-white"
                 style={{
                   marginRight: "20px",
-                  marginTop: "10%",
                   borderColor: "white",
+                  color: "white",
                 }}
               >
                 Masuk

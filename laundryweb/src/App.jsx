@@ -9,6 +9,7 @@ import Layanan from './pages/Layanan';
 import Informasi from './pages/Informasi';
 import FAQ from './pages/FAQ';
 import TentangKami from './pages/TentangKami';
+import Notifikasi from './pages/Notifikasi';
 import Artikel1 from './pages/Artikel1';
 import Artikel2 from './pages/Artikel2';
 import Artikel3 from './pages/Artikel3';
@@ -32,6 +33,7 @@ const App = () => {
         <Route path='/FAQ' element={<FAQ/>}></Route>
         <Route path='/Layanan' element={<Layanan/>}></Route>
         <Route path='/TentangKami' element={<TentangKami/>}></Route>
+        <Route path='/Notifikasi' element={<Notifikasi/>}></Route>
         <Route path='/artikel/:slug' element={<Artikel/>}></Route>
         <Route path='/Artikel1' element={<Artikel1/>}></Route>
         <Route path='/Artikel2' element={<Artikel2/>}></Route>
