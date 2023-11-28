@@ -28,7 +28,7 @@ function Loginmitra() {
             <Form.Control style={{border:'none', borderRadius: '10px', boxShadow: '1px 3px 4px grey'}} type="password" placeholder="Kata Sandi" />
           </Form.Group>
           <Form.Group className="flex justify-end mb-3 w-3/4" controlId="formBasicPassword">
-            <Link style={{textDecoration: 'none'}} to='/'><p style={{color: 'black'}}>Lupa Kata Sandi?</p></Link>
+            <Link style={{textDecoration: 'none'}} to='/Pemulihan'><p style={{color: 'black'}}>Lupa Kata Sandi?</p></Link>
           </Form.Group>
           <Form.Group>
             <Link to='/'><Button style={{padding: '8px 35px', borderRadius: '13px', boxShadow: '1px 3px 4px grey', marginBottom: '20px'}} variant="primary" type="submit">

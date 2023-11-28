@@ -28,18 +28,18 @@ function Loginpelanggan() {
             <Form.Control style={{border:'none', borderRadius: '10px', boxShadow: '1px 3px 4px grey'}} type="password" placeholder="Kata Sandi" />
           </Form.Group>
           <Form.Group className="flex justify-end mb-3 w-3/4" controlId="formBasicPassword">
-            <Link style={{textDecoration: 'none'}} to='/'><p style={{color: 'black'}}>Lupa Kata Sandi?</p></Link>
+            <Link style={{textDecoration: 'none'}} to='/Pemulihan'><p style={{color: 'black'}}>Lupa Kata Sandi?</p></Link>
           </Form.Group>
           <Form.Group>
             <Link to='/'><Button style={{padding: '8px 35px', borderRadius: '13px', boxShadow: '1px 3px 4px grey', marginBottom: '20px'}} variant="primary" type="submit">
               Masuk
             </Button></Link>
           </Form.Group>
-          <Form.Group className="mb-3" controlId="formBasicPassword">
+          <Form.Group className="mb-3">
             <p>Belum Punya Akun? <Link style={{textDecoration: 'none'}} to="/Sign-up-pelanggan"><span style={{color: 'black'}}>Daftar</span></Link></p>
           </Form.Group>
         </Form>
-        <div style={{display: 'flex', justifyContent: 'center', alignItems: 'center', width: '50%', height: '130vh', background: '#C4DAE8'}} >
+        <div style={{display: 'flex', justifyContent: 'center', alignItems: 'center', width: '50%', height: '130vh', background: '#D9EAF4'}} >
           <img src={vector} alt="image" />
         </div>
       </div>
