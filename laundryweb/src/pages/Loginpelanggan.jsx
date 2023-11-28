@@ -43,9 +43,7 @@ function Loginpelanggan() {
           <img src={vector_1} alt="image" />
         </div>
       </div>
-      <div className="pt-20">
-        <Footer />
-      </div>
+      <Footer />
     </>
   );
 }
