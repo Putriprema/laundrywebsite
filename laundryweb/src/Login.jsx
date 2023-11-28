@@ -3,7 +3,7 @@ import React from 'react'
 import Navbar from "./components/Navbar";
 import Button from 'react-bootstrap/Button';
 import Form from 'react-bootstrap/Form';
-import vector from './assets/vector_login.png'
+// import vector from './assets/vector_login.png'
 import { Link } from 'react-router-dom';
 
 function LoginPelanggan() {
@@ -34,7 +34,7 @@ function LoginPelanggan() {
           </Form.Group>
         </Form>
         <div style={{display: 'flex', justifyContent: 'center', alignItems: 'center', width: '50%', height: '89.1vh', background: '#C4DAE8'}} >
-          <img src={vector} alt="" />
+          {/* <img src={vector} alt="" /> */}
         </div>
       </div>
     </>
