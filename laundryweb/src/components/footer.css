@@ -95,6 +95,10 @@ text-decoration: none;
   align-items: flex-start;
 }
 
+.sb_footer-links-content a {
+  text-decoration: none;
+}
+
 /* editing pada seluruh kontak kami */
 .sb_footer-links_divv {
   width: 150px;
