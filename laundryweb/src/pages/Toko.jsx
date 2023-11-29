@@ -5,8 +5,9 @@ import SearchButton from '../components/SearchButton'
 import Footer from '../components/Footer'
 import { Accordion, Button } from 'react-bootstrap'
 import { Link } from 'react-router-dom'
-import logo from '../assets/logo.png'
+import logo from '../assets/toko_1.png'
 import plus from '../assets/plus_circle.png'
+import like from '../assets/like.png'
 
 const Toko = () => {
   return (
@@ -16,19 +17,19 @@ const Toko = () => {
         <div className='mx-20'>
             <div style={{boxShadow: '0px 3px 4px rgba(0, 0, 0, 0.2)', borderRadius: '10px', border: 'none'}} className='flex justify-between mt-10'>
                 <div className='flex'>
-                    <div style={{background: 'grey', width: '150px',height: '150px' , margin: '10px', objectFit: 'cover'}}>
-                        <img style={{width: '200px'}} src={logo} alt="" />
+                    <div style={{margin: '10px'}}>
+                        <img style={{width: '150px',height: '150px' , objectFit: 'cover'}} src={logo} alt="" />
                     </div>
                     <div className='flex flex-col justify-between pl-5'>
-                        <div className='flex pt-4'>
+                        <div style={{display: 'flex', justifyContent: 'space-between', width: '250px', paddingTop: '10px'}}>
                             <h2>Den Gobel</h2>
-                            <img src='' alt="" />
+                            <img className='w-8 h-8' src={like} alt="like" />
                         </div>
                         <div>
                             <p>Bantul</p>
                         </div>
                         <div className='flex justify-between items-center pb-3'>
-                            <p style={{background: '#D23D3D', color: 'white', width: '60px', padding: '6px', borderRadius: '5px'}}>TUTUP</p>
+                            <p style={{background: '#D23D3D', color: 'white', width: '60px', padding: '6px', borderRadius: '5px', marginLeft: '10px'}}>TUTUP</p>
                             <Link to='/'><Button style={{background: '#D9EAF4', border: 'none', color: 'black', margin: '0 15px 12px'}}>Info Outlet</Button></Link>
                         </div>
                     </div>
@@ -53,13 +54,13 @@ const Toko = () => {
                     </div>
                 </div>
             </div>
-            <div style={{display: 'flex', justifyContent: 'space-between',  marginTop: '30px'}}>
-                <div style={{boxShadow: '0px 4px 4px rgba(0, 0, 0, 0.2)', borderRadius: '10px', width: '57%'}}>
-                    <h3 className='pl-5 pb-5'>Daftar Layanan</h3>
+            <div style={{display: 'flex', justifyContent: 'space-between',  marginTop: '40px', height: '65vh'}}>
+                <div style={{boxShadow: '0px 4px 4px rgba(0, 0, 0, 0.2)', borderRadius: '10px', width: '67%', height: '33vh'}}>
+                    <h3 className='pl-5 pb-5 pt-4'>Daftar Layanan</h3>
                     <Accordion>
                         <Accordion.Item style={{border: 'none'}} eventKey="0">
-                            <Accordion.Header><h5>Cuci Kering - 3 jam</h5></Accordion.Header>
-                            <Accordion.Body>
+                            <Accordion.Header style={{boxShadow: '0px 4px 4px rgba(0, 0, 0, 0.2)'}}><h5>Cuci Kering - 3 jam</h5></Accordion.Header>
+                            <Accordion.Body style={{boxShadow: '0px 4px 4px rgba(0, 0, 0, 0.2)'}}>
                                 <div className='flex justify-between items-center'>
                                     <div>
                                         <h5>Cuci Kering 3 jam</h5>
@@ -99,8 +100,8 @@ const Toko = () => {
                             </Accordion.Body>
                         </Accordion.Item>
                         <Accordion.Item style={{border: 'none'}} eventKey="1">
-                            <Accordion.Header><h5>Cuci Setrika - 3 Hari</h5></Accordion.Header>
-                            <Accordion.Body>
+                            <Accordion.Header style={{boxShadow: '0px 4px 4px rgba(0, 0, 0, 0.2)'}}><h5>Cuci Setrika - 3 Hari</h5></Accordion.Header>
+                            <Accordion.Body style={{boxShadow: '0px 4px 4px rgba(0, 0, 0, 0.2)'}}>
                             <div className='flex justify-between items-center'>
                                     <div>
                                         <h5>Cuci Kering 3 jam</h5>
@@ -140,8 +141,8 @@ const Toko = () => {
                             </Accordion.Body>
                         </Accordion.Item>
                         <Accordion.Item style={{border: 'none'}} eventKey="2">
-                            <Accordion.Header><h5>Cuci Kering - 1 Hari</h5></Accordion.Header>
-                            <Accordion.Body>
+                            <Accordion.Header style={{boxShadow: '0px 4px 4px rgba(0, 0, 0, 0.2)', borderRadius: '10px'}}><h5>Cuci Kering - 1 Hari</h5></Accordion.Header>
+                            <Accordion.Body style={{boxShadow: '0px 4px 4px rgba(0, 0, 0, 0.2)', borderRadius: '10px'}}>
                             <div className='flex justify-between items-center'>
                                     <div>
                                         <h5>Cuci Kering 3 jam</h5>
@@ -182,12 +183,26 @@ const Toko = () => {
                         </Accordion.Item>
                     </Accordion>
                 </div>
-                <div style={{background: 'blue', width: '40%'}}>
-                    <div style={{background: 'green'}}>
-                        <h3>Hello</h3>
+                <div style={{width: '30%'}}>
+                    <div style={{borderRadius: '10px', boxShadow: '0px 4px 4px rgba(0, 0, 0, 0.2)', padding: '40px 25px', marginBottom: '40px'}}>
+                        <div className='flex justify-between items-center pb-4'>
+                            <h3>Layanan Terpilih</h3>
+                            <h5>0 Layanan</h5>
+                        </div>
+                        <div className='flex justify-between items-center pb-4'>
+                            <h5>Sub Total</h5>
+                            <h3>Rp0</h3>
+                        </div>
+                        <div className='flex justify-around'>
+                            <Button style={{borderRadius: '15px', color: 'black', background: '#D9EAF4', border: 'none', padding: '10px 25px'}}>Simpan Keranjang</Button>
+                            <Button style={{borderRadius: '15px', background: '#3579F6', border: 'none', padding: '10px 25px'}}>Lanjutkan</Button>
+                        </div>
                     </div>
-                    <div style={{background: 'yellow'}}>
-                        <h3>Hello</h3>
+                    <div style={{borderRadius: '10px', boxShadow: '0px 4px 4px rgba(0, 0, 0, 0.2)', padding: '40px 25px'}}>
+                        <h3>Promo Outlet</h3>
+                        <div className='flex justify-center items-center m-5'>
+                            <h4>Belum Ada Promo</h4>
+                        </div>
                     </div>
                 </div>
             </div>
