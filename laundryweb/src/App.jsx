@@ -23,8 +23,8 @@ import Pemulihan from './pages/Pemulihan';
 import Toko from './pages/Toko';
 import Dash from "./pages/Dash";
 import Dashtrans from "./pages/Dashtrans";
-
-
+import Newpass from "./pages/Newpass";
+import Newpassm from "./pages/Newpassm"
 const App = () => {
   return (
     <Router>
@@ -51,6 +51,8 @@ const App = () => {
         <Route path='/Toko' element={<Toko/>}></Route>
         <Route path='/Dash' element={<Dash/>}></Route>
         <Route path='/Dashtrans' element={<Dashtrans/>}></Route>
+        <Route path='/Newpass' element={<Newpass/>}></Route>
+        <Route path='/Newpassm' element={<Newpassm/>}></Route>
       </Routes>
     </Router>
   );

@@ -1,12 +1,12 @@
-/* eslint-disable no-unused-vars */
-import React from 'react'
 import Navbar from "../components/Navbar";
 import Button from 'react-bootstrap/Button';
 import Card from 'react-bootstrap/Card';
 import { Link } from 'react-router-dom';
 import Footer from '../components/Footer';
 
+
 const Pemulihan = () => {
+ 
   return (
     <>
       <Navbar />
@@ -21,13 +21,21 @@ const Pemulihan = () => {
               <label className='flex justify-start'>Masukkan Email Anda</label>
               <input style={{border:'1px solid', borderRadius: '10px', height: '40px'}} type="email" placeholder="  Email" />
             </div>
-            <Link to='/'><Button style={{borderRadius: '20px', width: '20%',}} variant="primary">Kirimkan</Button></Link>
-            <Card.Text className='pt-4'>Kembali ke <Link style={{color: 'black', textDecoration: 'none'}} to='/'><span>Beranda</span></Link></Card.Text>
+            <Link to='/Newpass'>
+              <Button
+                style={{ borderRadius: '20px', width: '20%' }}
+                variant="primary"
+              >
+                Kirimkan
+              </Button>
+            </Link>
+            <Card.Text className='pt-4'>Kembali ke <Link style={{color: 'black', textDecoration: 'none'}} to='./Newpass'><span>Beranda</span></Link></Card.Text>
           </Card.Body>
         </Card>
       </div>
+     
       <div className='pt-20'>
-      <Footer />
+        <Footer />
       </div>
     </>
   );
