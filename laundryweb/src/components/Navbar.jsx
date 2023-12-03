@@ -6,8 +6,9 @@ import Navbar from "react-bootstrap/Navbar";
 import Button from "react-bootstrap/Button";
 import { Link } from "react-router-dom";
 
-const CustomNavbar = () => {
+const CustomNavbar = ({ navValue }) => {
   const [showDropdown, setShowDropdown] = useState(false);
+  const [getNavbarValue, setNavbarValue] = useState(navValue);
 
   const toggleDropdown = () => {
     setShowDropdown(!showDropdown);
@@ -16,6 +17,11 @@ const CustomNavbar = () => {
   const closeDropdown = () => {
     setShowDropdown(false);
   };
+
+  const changeNavbarValue = () => {
+    setNavbarValue(getNavbarValue === "Profile" ? "" : "Profile");
+  };
+
 
   let Links = [
     { name: "Beranda", link: "/home" },
@@ -122,17 +128,22 @@ const CustomNavbar = () => {
                 style={{ fontSize: "24pt" }}
               ></ion-icon>
             </Link>
-            <Link style={{color: 'white'}} to="/Login-option">
+            <Link style={{color: 'white'}} to="/Login-option">    
+                <>
               <Button
-                variant="outline-info"
-                style={{
-                  marginRight: "20px",
-                  borderColor: "white",
-                  color: "white",
-                }}
-              >
-                Masuk
-              </Button>
+              onClick={() => changeNavbarValue()}
+              style={{
+                padding: '8px 35px',
+                borderRadius: '13px',
+                boxShadow: '1px 3px 4px grey',
+                marginBottom: '20px'
+              }}
+              variant='primary'
+              type='submit'
+            >
+             masuk
+            </Button>
+               </>
             </Link>
           </Nav>
         </Navbar.Collapse>
@@ -142,3 +153,4 @@ const CustomNavbar = () => {
 };
 
 export default CustomNavbar;
+// {!navValue ? "" : navValue }

@@ -6,11 +6,19 @@ import Form from 'react-bootstrap/Form';
 import vector from '../assets/vector_pelanggan.png'
 import { Link } from 'react-router-dom';
 import Footer from '../components/Footer';
+import { useState } from 'react';
 
 function Signuppelanggan() {
+  const [getNavbarValue, setNavbarValue] = useState("");
+
+  const changeNavbarValue = () => {
+      setNavbarValue("Profile");
+  };
+
+
   return (
     <>
-      <Navbar />
+      <Navbar navValue={getNavbarValue}/>
       <div className='flex'>
         <Form className='flex flex-col justify-center items-center w-1/2'>
           <div className='flex justify-start w-3/4 mb-20'>

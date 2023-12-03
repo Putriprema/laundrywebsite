@@ -1,4 +1,6 @@
-// /* eslint-disable no-unused-vars */
+/* eslint-disable no-unused-vars */
+import { useEffect } from "react";
+import React, { useState } from "react";
 import Navbar from "../components/Navbar";
 import Home1 from "../components/Home1";
 import LayananKami from "../components/LayananKami";
@@ -8,39 +10,40 @@ import { Link } from "react-router-dom";
 import Footer from "../components/Footer";
 import AOS from 'aos'; //aos link untuk animation
 import 'aos/dist/aos.css'; //aos link untuk animation
-import { useEffect } from "react";
-const Home = () => {
-  useEffect(() => {
-    // Kode chat Crisp yang baru
-    window.$crisp = [];
-    window.CRISP_WEBSITE_ID = "d583988c-da94-4e03-a7aa-0d4faea374f3";
-    (function () {
-      let d = document;
-      let s = d.createElement("script");
-      s.src = "https://client.crisp.chat/l.js";
-      s.async = 1;
-      d.getElementsByTagName("head")[0].appendChild(s);
-    })();
-    
-    // Inisialisasi AOS
-    AOS.init({
-      once: true,
-      duration: 1000
-    });
-  }, []);
- 
 
-  // bagian inisialisasi
-  useEffect(() =>{
-    AOS.init({
-      once: true,
-      duration : 1000
-    }) 
-  }, [])
+const Home = () => {
+    const [getNavbarValue, setNavbarValue] = useState("");
+  
+    useEffect(() => {
+      // Kode chat Crisp yang baru
+      window.$crisp = [];
+      window.CRISP_WEBSITE_ID = "d583988c-da94-4e03-a7aa-0d4faea374f3";
+      (function () {
+        let d = document;
+        let s = d.createElement("script");
+        s.src = "https://client.crisp.chat/l.js";
+        s.async = 1;
+        d.getElementsByTagName("head")[0].appendChild(s);
+      })();
+      
+      // Inisialisasi AOS
+      AOS.init({
+        once: true,
+        duration: 1000
+      });
+  
+      // Set nilai Navbar saat komponen dimuat
+      setNavbarValue("nilai default"); // Ganti ini sesuai kebutuhan
+    }, []);
+  
+    // Fungsi untuk mengubah nilai Navbar
+    const changeNavbarValue = () => {
+      setNavbarValue("profile");
+    }
 
   return (
     <>
-      <Navbar/>
+      <Navbar navValue={getNavbarValue} />
       <div data-aos="fade-right" id="Home" className="h-auto px-10 lg:px-[200px] flex items-center">
         <div className="h-screen max-w-[700px] flex flex-col justify-center gap-y-5">
           <h1 data-aos="fade-up" className="font-bold text-[20px]" style={{ color: "#4784A8" }} >
