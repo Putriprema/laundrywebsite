@@ -25,9 +25,10 @@ const Layanan = () => {
       <Navbar />
       <SearchButton data-aos="fade-up"/>
       <h1 data-aos="fade-up" className="text-center" style={{ marginTop: "5%", color: 'black', fontSize: '24pt', fontWeight: 'bold' }}>Layanan Laundry yang Tersedia</h1>
-      <Link style={{textDecoration: 'none'}} to='/Toko'><div data-aos="fade-up" className='grid grid-cols-3 place-items-center gap-y-14 pt-20'>
+      <div data-aos="fade-up" className='grid grid-cols-3 place-items-center gap-y-14 pt-20'>
           {new_cards.map(cards => (
-            <Cards data-aos="fade-up"
+            // eslint-disable-next-line react/jsx-key
+            <Link style={{textDecoration: 'none'}} to={`/Toko/${cards.url}`}><Cards data-aos="fade-up"
               key={cards.id}
               image={cards.image}
               name={cards.name}
@@ -35,9 +36,9 @@ const Layanan = () => {
               price={cards.price}
               transaction={cards.transaction}
               rate={cards.rate}
-            />
+            /></Link>
           ))}
-        </div></Link>
+        </div>
         <div className="pt-20">
         <Footer />
       </div>

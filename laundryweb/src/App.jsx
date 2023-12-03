@@ -36,6 +36,7 @@ const App = () => {
         <Route path='/Informasi' element={<Informasi/>}></Route>
         <Route path='/FAQ' element={<FAQ/>}></Route>
         <Route path='/Layanan' element={<Layanan/>}></Route>
+        <Route path='/Toko/:url' element={<Toko/>}></Route>
         <Route path='/TentangKami' element={<TentangKami/>}></Route>
         <Route path='/Notifikasi' element={<Notifikasi/>}></Route>
         <Route path='/artikel/:slug' element={<Artikel/>}></Route>
@@ -48,7 +49,6 @@ const App = () => {
         <Route path='/Sign-up-pelanggan' element={<Signuppelanggan/>}></Route>
         <Route path='/Sign-up-mitra' element={<Signupmitra/>}></Route>
         <Route path='/Pemulihan' element={<Pemulihan/>}></Route>
-        <Route path='/Toko' element={<Toko/>}></Route>
         <Route path='/Dash' element={<Dash/>}></Route>
         <Route path='/Dashtrans' element={<Dashtrans/>}></Route>
       </Routes>
