@@ -63,14 +63,17 @@ const Home = () => {
             gratis demi mempermudah Anda, dengan jaminan waktu tepat.
           </p>
           <div>
-            <button data-aos="fade-right" className="px-6 lg:px-8 py-3 text-white rounded-full mt-4 bg-sky-700 hover:bg-cyan-300 transition duration-500">
-              <Link
-                to="/layanan"
-                data-aos="fade-up"
-                style={{ textDecoration: "none", color: "white" }}>
-                Laundry Sekarang
-              </Link>
-            </button>
+          <button
+            data-aos="fade-right"
+            className="px-6 lg:px-8 py-3 text-white rounded-full mt-4 bg-blue-600 transition duration-500"
+            style={{ backgroundColor: '#3579F6', ':hover': { backgroundColor: '#00FFFF' } }}>
+            <Link
+              to="/layanan"
+              data-aos="fade-up"
+              style={{ textDecoration: "none", color: "white" }}>
+              Laundry Sekarang
+            </Link>
+          </button>
           </div>
         </div>
       </div>

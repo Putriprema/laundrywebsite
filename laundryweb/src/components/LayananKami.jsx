@@ -8,6 +8,7 @@ import cucikilat from '../assets/cucikilat.png';
 import AOS from 'aos'; //aos link untuk animation
 import 'aos/dist/aos.css'; //aos link untuk animation
 import { useEffect } from "react";
+import { Link } from 'react-router-dom';
 const LayananKami = () => {
   
    // bagian inisialisasi
@@ -36,7 +37,9 @@ const LayananKami = () => {
           </div>
           <Card.Body style={{ textAlign: 'center' }}>
             <Card.Title style={{ fontWeight: 'bold' }}>Cuci Setrika</Card.Title>
-            <Button variant="primary" className="btn-lg">Pilih</Button>
+            <Button variant="primary" className="btn-lg">
+            <Link style={{ color: 'white', textDecoration:'none'}}to="/Layanan">Pilih</Link>
+            </Button>
           </Card.Body>
         </Card>
    
@@ -53,7 +56,9 @@ const LayananKami = () => {
           </div>
           <Card.Body style={{ textAlign: 'center' }}>
             <Card.Title style={{ fontWeight: 'bold' }}>Cuci Setrika</Card.Title>
-            <Button variant="primary" className="btn-lg">Pilih</Button>
+            <Button variant="primary" className="btn-lg">
+            <Link style={{ color: 'white', textDecoration:'none'}}to="/Layanan">Pilih</Link>
+            </Button>
           </Card.Body>
         </Card>
   
@@ -70,7 +75,9 @@ const LayananKami = () => {
           </div>
           <Card.Body style={{ textAlign: 'center' }}>
             <Card.Title style={{ fontWeight: 'bold' }}>Cuci Setrika</Card.Title>
-            <Button variant="primary" className="btn-lg">Pilih</Button>
+            <Button variant="primary" className="btn-lg">
+            <Link style={{ color: 'white', textDecoration:'none'}}to="/Layanan">Pilih</Link>
+            </Button>
           </Card.Body>
         </Card>
       </div>

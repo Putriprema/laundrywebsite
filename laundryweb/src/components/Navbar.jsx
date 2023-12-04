@@ -135,8 +135,7 @@ const CustomNavbar = ({ navValue }) => {
               style={{
                 padding: '8px 35px',
                 borderRadius: '13px',
-                boxShadow: '1px 3px 4px grey',
-                marginBottom: '20px'
+                marginBottom: '20px',
               }}
               variant='primary'
               type='submit'
