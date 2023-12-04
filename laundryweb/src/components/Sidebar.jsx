@@ -17,7 +17,7 @@ const Sidebar = () => {
           backgroundColor: "#327094",
           paddingTop: "375px",
           paddingBottom: "375px",
-          minHeight: '85vh'
+          minHeight: '101vh'
         }}
       >
       </Col>
