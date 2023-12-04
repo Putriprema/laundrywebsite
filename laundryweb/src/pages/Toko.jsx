@@ -199,7 +199,19 @@ const Toko = () => {
                         </div>
                         <div className='flex justify-around'>
                             <Button style={{borderRadius: '15px', color: 'black', background: '#D9EAF4', border: 'none', padding: '10px 25px'}}>Simpan Keranjang</Button>
-                            <Button style={{borderRadius: '15px', background: '#3579F6', border: 'none', padding: '10px 25px'}}>Lanjutkan</Button>
+                            <Link to="/Payment" style={{ textDecoration: 'none' }}>
+                            <button
+                                style={{
+                                borderRadius: '15px',
+                                background: '#3579F6',
+                                border: 'none',
+                                padding: '10px 25px',
+                                cursor: 'pointer',
+                                color: '#fff',
+                                }}>
+                                Lanjutkan
+                            </button>
+                            </Link>
                         </div>
                     </div>
                     <div style={{borderRadius: '10px', boxShadow: '0px 4px 4px rgba(0, 0, 0, 0.2)', padding: '40px 25px'}}>

@@ -8,8 +8,8 @@ import Promobulan from "../components/Promobulan";
 import Slickreview from "../components/Slickreview";
 import { Link } from "react-router-dom";
 import Footer from "../components/Footer";
-import AOS from 'aos'; //aos link untuk animation
-import 'aos/dist/aos.css'; //aos link untuk animation
+import AOS from 'aos'; //aos link buat animation
+import 'aos/dist/aos.css'; //aos link buat animation
 
 const Home = () => {
     const [getNavbarValue, setNavbarValue] = useState("");
@@ -32,8 +32,8 @@ const Home = () => {
         duration: 1000
       });
   
-      // Set nilai Navbar saat komponen dimuat
-      setNavbarValue("nilai default"); // Ganti ini sesuai kebutuhan
+    
+      setNavbarValue("nilai default"); 
     }, []);
   
     // Fungsi untuk mengubah nilai Navbar

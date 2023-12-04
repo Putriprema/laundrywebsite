@@ -41,7 +41,7 @@ function Loginpelanggan() {
             </Link>
           </Form.Group>
           <Form.Group>
-            <Link to='/'>
+            <Link to='/Home'>
               <Button
                 onClick={() => changeNavbarValue()}
                 style={{

@@ -27,13 +27,13 @@ import Newpass from "./pages/Newpass";
 import Newpassm from "./pages/Newpassm";
 import Transaksi from "./pages/Transaksi";
 import Transaksi2 from "./pages/Transaksi2";
-import Payment from "./pages/payment";
+import Payment from "./Payment";
 const App = () => {
   return (
     <Router>
       <Routes>
         {/* kalo ada eror yang ga keliatan pagenya itu krn /homenya ygn belum ke isi/ atau ke refresh :( */}
-        <Route path='/' element={<Home/>}></Route>
+        <Route path='/Home' element={<Home/>}></Route>
         <Route path='/Blog' element={<Blog/>}></Route>
         <Route path='/Informasi' element={<Informasi/>}></Route>
         <Route path='/FAQ' element={<FAQ/>}></Route>
