@@ -5,11 +5,15 @@ import SearchButton from '../components/SearchButton'
 import Footer from '../components/Footer'
 import { Accordion, Button } from 'react-bootstrap'
 import { Link } from 'react-router-dom'
-import logo from '../assets/toko_1.png'
 import plus from '../assets/plus_circle.png'
 import like from '../assets/like.png'
+import new_cards from '../data/dataToko';
+import { useParams } from 'react-router-dom';
 
 const Toko = () => {
+    const { url } = useParams();
+    const toko = new_cards.find(cards => cards.url === url);
+
   return (
     <div>
         <Navbar />
@@ -18,15 +22,15 @@ const Toko = () => {
             <div style={{boxShadow: '0px 3px 4px rgba(0, 0, 0, 0.2)', borderRadius: '10px', border: 'none'}} className='flex justify-between mt-10'>
                 <div className='flex'>
                     <div style={{margin: '10px'}}>
-                        <img style={{width: '150px',height: '150px' , objectFit: 'cover'}} src={logo} alt="" />
+                        <img style={{width: '150px',height: '150px' , objectFit: 'cover'}} src={toko.image} alt="picture" />
                     </div>
                     <div className='flex flex-col justify-between pl-5'>
-                        <div style={{display: 'flex', justifyContent: 'space-between', width: '250px', paddingTop: '10px'}}>
-                            <h2>Den Gobel</h2>
+                        <div style={{display: 'flex', justifyContent: 'space-between', width: '300px', paddingTop: '10px'}}>
+                            <h2>{toko.name}</h2>
                             <img className='w-8 h-8' src={like} alt="like" />
                         </div>
                         <div>
-                            <p>Bantul</p>
+                            <p>{toko.locate}</p>
                         </div>
                         <div className='flex justify-between items-center pb-3'>
                             <p style={{background: '#D23D3D', color: 'white', width: '60px', padding: '6px', borderRadius: '5px', marginLeft: '10px'}}>TUTUP</p>
@@ -38,15 +42,15 @@ const Toko = () => {
                     <div style={{display: 'flex', justifyContent: 'space-between'}}>
                         <div style={{display: 'flex', flexDirection: 'column', alignItems: 'center', margin: '15px 40px'}}>
                             <h4 className='mb-4'>Rating Outlet</h4>
-                            <p><b>0.0</b></p>
+                            <p><b>{toko.rate}</b></p>
                         </div>
                         <div style={{display: 'flex', flexDirection: 'column', alignItems: 'center', margin: '15px 40px'}}>
                             <h4 className='mb-4'>Mulai Dari</h4>
-                            <p><b>Rp5.000</b></p>
+                            <p><b>{toko.price}</b></p>
                         </div>
                         <div style={{display: 'flex', flexDirection: 'column', alignItems: 'center', margin: '15px 40px'}}>
                             <h4 className='mb-4'>Transaksi Berhasil</h4>
-                            <p><b>0 </b>Transaksi</p>
+                            <p><b>{toko.transaction}</b> Transaksi</p>
                         </div>
                     </div>
                     <div>
