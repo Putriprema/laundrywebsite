@@ -9,10 +9,39 @@ import plus from '../assets/plus_circle.png'
 import like from '../assets/like.png'
 import new_cards from '../data/dataToko';
 import { useParams } from 'react-router-dom';
+import { useState, useEffect } from 'react';
+
 
 const Toko = () => {
     const { url } = useParams();
     const toko = new_cards.find(cards => cards.url === url);
+
+    const generateRandomOrderId = () => {
+        const letters = 'ABCDEFGHIJKLMNOPQRSTUVWXYZ';
+        const numbers = '0123456789';
+
+        let randomLetters = '';
+        let randomNumbers = '';
+
+        for (let i = 0; i < 2; i++) {
+            const randomIndex = Math.floor(Math.random() * letters.length);
+            randomLetters += letters.charAt(randomIndex);
+        }
+
+        for (let i = 0; i < 2; i++) {
+            const randomIndex = Math.floor(Math.random() * numbers.length);
+            randomNumbers += numbers.charAt(randomIndex);
+        }
+
+        return randomLetters + randomNumbers;
+    };
+
+    const [orderId, setOrderId] = useState('');
+
+    useEffect(() => {
+        const newOrderId = generateRandomOrderId();
+        setOrderId(newOrderId);
+    }, []);
 
   return (
     <div>
@@ -193,6 +222,10 @@ const Toko = () => {
                             <h3>Layanan Terpilih</h3>
                             <h5>0 Layanan</h5>
                         </div>
+                        <div className='flex justify-between items-center pb-4'>
+                        <h5>order id</h5>
+                         <h3>{orderId}</h3>
+                            </div>
                         <div className='flex justify-between items-center pb-4'>
                             <h5>Sub Total</h5>
                             <h3>Rp0</h3>
