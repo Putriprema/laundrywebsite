@@ -29,6 +29,8 @@ import Transaksi from "./pages/Transaksi";
 import Transaksi2 from "./pages/Transaksi2";
 import payment from "./Payment";
 import Payment from './Payment';
+import SimpanKeranjang from './pages/SimpanKeranjang';
+
 const App = () => {
   return (
     <Router>
@@ -59,6 +61,7 @@ const App = () => {
         <Route path='/Transaksi' element={<Transaksi/>}></Route>
         <Route path='/Transaksi2' element={<Transaksi2/>}></Route>
         <Route path='/payment' element={<Payment/>}></Route>
+        <Route path='/simpanKeranjang' element={<SimpanKeranjang/>}></Route>
       </Routes>
     </Router>
   );
