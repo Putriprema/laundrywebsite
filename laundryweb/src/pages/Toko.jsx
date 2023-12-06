@@ -6,6 +6,7 @@ import Footer from '../components/Footer'
 import { Accordion, Button } from 'react-bootstrap'
 import { Link } from 'react-router-dom'
 import plus from '../assets/plus_circle.png'
+import minus from '../assets/minus.png'
 import like from '../assets/like.png'
 import new_cards from '../data/dataToko';
 import { useParams } from 'react-router-dom';
@@ -15,6 +16,8 @@ import { useState, useEffect } from 'react';
 const Toko = () => {
     const { url } = useParams();
     const toko = new_cards.find(cards => cards.url === url);
+
+    const [subtotal, setSubtotal] = useState(0);
 
     const generateRandomOrderId = () => {
         const letters = 'ABCDEFGHIJKLMNOPQRSTUVWXYZ';
@@ -43,6 +46,13 @@ const Toko = () => {
         setOrderId(newOrderId);
     }, []);
 
+    const handlePlusClick = (harga) => {
+        const newSubtotal = subtotal + harga;
+        console.log("New Subtotal:", newSubtotal); // Tambahkan log di sini
+        setSubtotal(newSubtotal);
+    };
+
+    
   return (
     <div>
         <Navbar />
@@ -99,8 +109,9 @@ const Toko = () => {
                                         <h5>Cuci Kering 3 jam</h5>
                                         <p>Rp8.000/kg</p>
                                     </div>
-                                    <div>
-                                        <img style={{width: '25px'}} src={plus} alt="" />
+                                    <div style={{ display: 'flex' }}>
+                                    <img style={{ width: '25px', marginRight: '10px' }} src={minus} alt="" onClick={() => handlePlusClick(-8000)} />
+                                    <img style={{ width: '25px' }} src={plus} alt="" onClick={() => handlePlusClick(8000)} />
                                     </div>
                                 </div>
                                 <div className='flex justify-between items-center'>
@@ -108,8 +119,9 @@ const Toko = () => {
                                         <h5>Cuci Kering 4 jam</h5>
                                         <p>Rp6.000/kg</p>
                                     </div>
-                                    <div>
-                                        <img style={{width: '25px'}} src={plus} alt="" />
+                                    <div style={{ display: 'flex' }}>
+                                    <img style={{ width: '25px', marginRight: '10px' }} src={minus} alt="" onClick={() => handlePlusClick(-6000)} />
+                                    <img style={{ width: '25px' }} src={plus} alt="" onClick={() => handlePlusClick(6000)} />
                                     </div>
                                 </div>
                                 <div className='flex justify-between items-center'>
@@ -117,17 +129,19 @@ const Toko = () => {
                                         <h5>Cuci Kering 6 jam</h5>
                                         <p>Rp5.000/kg</p>
                                     </div>
-                                    <div>
-                                        <img style={{width: '25px'}} src={plus} alt="" />
-                                    </div>
+                                    <div style={{ display: 'flex' }}>
+                                    <img style={{ width: '25px', marginRight: '10px' }} src={minus} alt="" onClick={() => handlePlusClick(-5000)} />
+                                    <img style={{ width: '25px' }} src={plus} alt="" onClick={() => handlePlusClick(5000)} />
+                                </div>
                                 </div>
                                 <div className='flex justify-between items-center'>
                                     <div>
                                         <h5>Cuci Kering 24 jam</h5>
                                         <p>Rp3.000/kg</p>
                                     </div>
-                                    <div>
-                                        <img style={{width: '25px'}} src={plus} alt="" />
+                                    <div style={{ display: 'flex' }}>
+                                    <img style={{ width: '25px', marginRight: '10px' }} src={minus} alt="" onClick={() => handlePlusClick(-3000)} />
+                                    <img style={{ width: '25px' }} src={plus} alt="" onClick={() => handlePlusClick(3000)} />
                                     </div>
                                 </div>
                             </Accordion.Body>
@@ -140,8 +154,9 @@ const Toko = () => {
                                         <h5>Cuci Kering 3 jam</h5>
                                         <p>Rp8.000/kg</p>
                                     </div>
-                                    <div>
-                                        <img style={{width: '25px'}} src={plus} alt="" />
+                                    <div style={{ display: 'flex' }}>
+                                    <img style={{ width: '25px', marginRight: '10px' }} src={minus} alt="" onClick={() => handlePlusClick(-8000)} />
+                                    <img style={{ width: '25px' }} src={plus} alt="" onClick={() => handlePlusClick(8000)} />
                                     </div>
                                 </div>
                                 <div className='flex justify-between items-center'>
@@ -149,8 +164,9 @@ const Toko = () => {
                                         <h5>Cuci Kering 4 jam</h5>
                                         <p>Rp6.000/kg</p>
                                     </div>
-                                    <div>
-                                        <img style={{width: '25px'}} src={plus} alt="" />
+                                    <div style={{ display: 'flex' }}>
+                                    <img style={{ width: '25px', marginRight: '10px' }} src={minus} alt="" onClick={() => handlePlusClick(-6000)} />
+                                    <img style={{ width: '25px' }} src={plus} alt="" onClick={() => handlePlusClick(6000)} />
                                     </div>
                                 </div>
                                 <div className='flex justify-between items-center'>
@@ -158,8 +174,9 @@ const Toko = () => {
                                         <h5>Cuci Kering 6 jam</h5>
                                         <p>Rp5.000/kg</p>
                                     </div>
-                                    <div>
-                                        <img style={{width: '25px'}} src={plus} alt="" />
+                                    <div style={{ display: 'flex' }}>
+                                    <img style={{ width: '25px', marginRight: '10px' }} src={minus} alt="" onClick={() => handlePlusClick(-5000)} />
+                                    <img style={{ width: '25px' }} src={plus} alt="" onClick={() => handlePlusClick(5000)} />
                                     </div>
                                 </div>
                                 <div className='flex justify-between items-center'>
@@ -167,8 +184,9 @@ const Toko = () => {
                                         <h5>Cuci Kering 24 jam</h5>
                                         <p>Rp3.000/kg</p>
                                     </div>
-                                    <div>
-                                        <img style={{width: '25px'}} src={plus} alt="" />
+                                    <div style={{ display: 'flex' }}>
+                                    <img style={{ width: '25px', marginRight: '10px' }} src={minus} alt="" onClick={() => handlePlusClick(-3000)} />
+                                    <img style={{ width: '25px' }} src={plus} alt="" onClick={() => handlePlusClick(3000)} />
                                     </div>
                                 </div>
                             </Accordion.Body>
@@ -181,8 +199,9 @@ const Toko = () => {
                                         <h5>Cuci Kering 3 jam</h5>
                                         <p>Rp8.000/kg</p>
                                     </div>
-                                    <div>
-                                        <img style={{width: '25px'}} src={plus} alt="" />
+                                    <div style={{ display: 'flex' }}>
+                                    <img style={{ width: '25px', marginRight: '10px' }} src={minus} alt="" onClick={() => handlePlusClick(-8000)} />
+                                    <img style={{ width: '25px' }} src={plus} alt="" onClick={() => handlePlusClick(8000)} />
                                     </div>
                                 </div>
                                 <div className='flex justify-between items-center'>
@@ -190,8 +209,9 @@ const Toko = () => {
                                         <h5>Cuci Kering 4 jam</h5>
                                         <p>Rp6.000/kg</p>
                                     </div>
-                                    <div>
-                                        <img style={{width: '25px'}} src={plus} alt="" />
+                                    <div style={{ display: 'flex' }}>
+                                    <img style={{ width: '25px', marginRight: '10px' }} src={minus} alt="" onClick={() => handlePlusClick(-6000)} />
+                                    <img style={{ width: '25px' }} src={plus} alt="" onClick={() => handlePlusClick(6000)} />
                                     </div>
                                 </div>
                                 <div className='flex justify-between items-center'>
@@ -199,8 +219,9 @@ const Toko = () => {
                                         <h5>Cuci Kering 6 jam</h5>
                                         <p>Rp5.000/kg</p>
                                     </div>
-                                    <div>
-                                        <img style={{width: '25px'}} src={plus} alt="" />
+                                    <div style={{ display: 'flex' }}>
+                                    <img style={{ width: '25px', marginRight: '10px' }} src={minus} alt="" onClick={() => handlePlusClick(-5000)} />
+                                    <img style={{ width: '25px' }} src={plus} alt="" onClick={() => handlePlusClick(5000)} />
                                     </div>
                                 </div>
                                 <div className='flex justify-between items-center'>
@@ -208,8 +229,9 @@ const Toko = () => {
                                         <h5>Cuci Kering 24 jam</h5>
                                         <p>Rp3.000/kg</p>
                                     </div>
-                                    <div>
-                                        <img style={{width: '25px'}} src={plus} alt="" />
+                                    <div style={{ display: 'flex' }}>
+                                    <img style={{ width: '25px', marginRight: '10px' }} src={minus} alt="" onClick={() => handlePlusClick(-3000)} />
+                                    <img style={{ width: '25px' }} src={plus} alt="" onClick={() => handlePlusClick(3000)} />
                                     </div>
                                 </div>
                             </Accordion.Body>
@@ -220,16 +242,16 @@ const Toko = () => {
                     <div style={{borderRadius: '10px', boxShadow: '0px 4px 4px rgba(0, 0, 0, 0.2)', padding: '40px 25px', marginBottom: '40px'}}>
                         <div className='flex justify-between items-center pb-4'>
                             <h3>Layanan Terpilih</h3>
-                            <h5>0 Layanan</h5>
+                            
                         </div>
                         <div className='flex justify-between items-center pb-4'>
                         <h5>order id</h5>
                          <h3>{orderId}</h3>
                             </div>
-                        <div className='flex justify-between items-center pb-4'>
-                            <h5>Sub Total</h5>
-                            <h3>Rp0</h3>
-                        </div>
+                            <div className='flex justify-between items-center pb-4'>
+                <h5>Sub Total</h5>
+                <h3>{`Rp${subtotal}`}</h3>
+            </div>
                         <div className='flex justify-around'>
                             <Button style={{borderRadius: '15px', color: 'black', background: '#D9EAF4', border: 'none', padding: '10px 25px'}}>Simpan Keranjang</Button>
                             <Link to="/Payment" style={{ textDecoration: 'none' }}>
