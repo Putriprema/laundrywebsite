@@ -29,12 +29,12 @@ const CustomNavbar = ({ navValue }) => {
       name: "Artikel",
       link: "/blog",
       dropdown: [
-        { subName: "Informasi", subLink: "/Informasi" },
-        { subName: "FA&Q", subLink: "/FAQ" },
+        { subName: "Informasi", subLink: "/informasi" },
+        { subName: "FA&Q", subLink: "/faq" },
       ],
     },
     { name: "Layanan", link: "/layanan" },
-    { name: "Tentang Kami", link: "/tentangkami" },
+    { name: "Tentang Kami", link: "/tentang-kami" },
   ];
 
   return (
@@ -128,7 +128,7 @@ const CustomNavbar = ({ navValue }) => {
                 style={{ fontSize: "24pt" }}
               ></ion-icon>
             </Link>
-            <Link style={{color: 'white'}} to="/Login-option">    
+            <Link style={{color: 'white'}} to="/login-options">    
                 <>
               <Button
               onClick={() => changeNavbarValue()}
