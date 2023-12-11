@@ -24,7 +24,7 @@ const errorMessageDisplay = (text) => (
     </p>
 );
 
-function Signuppelanggan() {
+function pelanggan() {
   const [getNavbarValue, setNavbarValue] = useState("");
 
   const changeNavbarValue = () => {
@@ -54,7 +54,7 @@ function Signuppelanggan() {
                 codeAffiliate: data.code,
             };
 
-        const statement = `http://localhost:7730/api/v1/${isRegister ? "Register" : "Login"}`;
+        const statement = `http://localhost:5555/api/v1/${isRegister ? "Register" : "Login"}`;
         try {
             const { data } = await axiosHandler(statement, value);
             Swal.fire({
@@ -196,6 +196,7 @@ function Signuppelanggan() {
                                         className="form-control"
                                         placeholder="Kode Affiliate"
                                         aria-describedby="code"
+                                        {...register("code")}
                                     />
                                 </div>
                             </> : null}
@@ -250,4 +251,4 @@ function Signuppelanggan() {
   );
 };
 
-export default Signuppelanggan;
+export default pelanggan;
