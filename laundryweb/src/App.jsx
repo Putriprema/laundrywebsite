@@ -1,35 +1,5 @@
-/* eslint-disable no-unused-vars */
-import React from 'react'
-import {BrowserRouter  as Router, Routes, Route} from 'react-router-dom';
-import AOS from 'aos'; //aos link untuk animation
-import 'aos/dist/aos.css'; //aos link untuk animation
-import Home from './pages/Home'
-import Blog from './pages/Blog'
-import Layanan from './pages/Layanan';
-import Informasi from './pages/Informasi';
-import FAQ from './pages/FAQ';
-import TentangKami from './pages/TentangKami';
-import Notifikasi from './pages/Notifikasi';
-import Artikel1 from './pages/Artikel1';
-import Artikel2 from './pages/Artikel2';
-import Artikel3 from './pages/Artikel3';
-import Artikel from "./pages/Artikel";
-import Loginoption from "./pages/Loginoption";
-import Loginpelanggan from "./pages/Loginpelanggan";
-import Loginmitra from "./pages/Loginmitra";
-import Signuppelanggan from "./pages/Signuppelaggan";
-import Signupmitra from "./pages/Signupmitra";
-import Pemulihan from './pages/Pemulihan';
-import Toko from './pages/Toko';
-import Dash from "./pages/Dash";
-import Dashtrans from "./pages/Dashtrans";
-import Newpass from "./pages/Newpass";
-import Newpassm from "./pages/Newpassm";
-import Transaksi from "./pages/Transaksi";
-import Transaksi2 from "./pages/Transaksi2";
-import payment from "./Payment";
-import Payment from './Payment';
-import SimpanKeranjang from './pages/SimpanKeranjang';
+import Routing from "./routes";
+
 
 const App = () => {
   return (
@@ -65,5 +35,7 @@ const App = () => {
       </Routes>
     </Router>
   );
-};
+
 export default App;
+
+// Routenya ku pindah ke folder routes, file index.jsx
