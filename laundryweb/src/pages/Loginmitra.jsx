@@ -31,7 +31,7 @@ function Loginmitra() {
             <Link style={{textDecoration: 'none'}} to='/Pemulihan'><p style={{color: 'black'}}>Lupa Kata Sandi?</p></Link>
           </Form.Group>
           <Form.Group>
-            <Link to='/Home'><Button style={{padding: '8px 35px', borderRadius: '13px', boxShadow: '1px 3px 4px grey', marginBottom: '20px'}} variant="primary" type="submit">
+            <Link to='/Dash'><Button style={{padding: '8px 35px', borderRadius: '13px', boxShadow: '1px 3px 4px grey', marginBottom: '20px'}} variant="primary" type="submit">
               Masuk
             </Button></Link>
           </Form.Group>
