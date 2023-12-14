@@ -2,7 +2,7 @@
 import React from 'react';
 import logo from "../assets/logo.png";
 import GooglePlay from '../assets/GooglePlay.png';
-import footer from './footer.css';
+import '../components/footer.css';
 
 const Footer = () => {
   return (
@@ -14,10 +14,10 @@ const Footer = () => {
           </div>
           <div className='sb_footer_nav'>
           <h1>Navigasi</h1>
-            <a href='/Home'><p>Beranda</p></a>
-            <a href='/Blog'><p>Artikel</p></a>
-            <a href='/Layanan'><p>Layanan</p></a>
-            <a href='/AboutUs'><p>Tentang Kami</p></a>
+            <a href='/home'><p>Beranda</p></a>
+            <a href='/informasi'><p>Artikel</p></a>
+            <a href='/layanan'><p>Layanan</p></a>
+            <a href='/tentang-kami'><p>Tentang Kami</p></a>
           </div>
         </div>
         <div className='sb_footer-links_div'>

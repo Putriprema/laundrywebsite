@@ -22,12 +22,10 @@ const CustomNavbar = ({ navValue }) => {
     setNavbarValue(getNavbarValue === "Profile" ? "" : "Profile");
   };
 
-
   let Links = [
     { name: "Beranda", link: "/home" },
     {
       name: "Artikel",
-      link: "/blog",
       dropdown: [
         { subName: "Informasi", subLink: "/informasi" },
         { subName: "FA&Q", subLink: "/faq" },
