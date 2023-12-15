@@ -9,8 +9,7 @@ import Navbar from 'react-bootstrap/Navbar';
 const Navbar3 = () => {
   let Links = [
     { name: "Beranda", link: "/home" },
-    { name: "Layanan", link: "/layanan" },
-    { name: "Transaksi", link: "/Transaksi" },
+    { name: "Rekap Transaksi", link: "/UserList" },
   ];
 
   return (

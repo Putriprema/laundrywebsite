@@ -3,6 +3,7 @@ import React from 'react';
 import logo from "../assets/logo.png";
 import GooglePlay from '../assets/GooglePlay.png';
 import footer from './footer.css';
+import { Link } from 'react-router-dom';
 
 const Footer = () => {
   return (
@@ -23,9 +24,9 @@ const Footer = () => {
         <div className='sb_footer-links_div'>
           <h2>Layanan Kami</h2>
           <div className='sb_footer-links-content'>
-            <a href='/CuciKering'><p>Cuci Kering</p></a>
-            <a href='/CuciSetrika'><p>Cuci Setrika</p></a>
-            <a href='/CuciKilat'><p>Cuci Kilat</p></a>
+            <a href='/Layanan'><p>Cuci Kering</p></a>
+            <a href='/Layanan'><p>Cuci Setrika</p></a>
+            <a href='/Layanan'><p>Cuci Kilat</p></a>
           </div>
         </div>
         <div className='sb_footer-links_divv'>

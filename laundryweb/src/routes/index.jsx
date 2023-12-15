@@ -21,15 +21,15 @@ import Loginmitra from "../pages/Loginmitra";
 import Signupmitra from "../pages/Signupmitra";
 import Pemulihan from '../pages/Pemulihan';
 import Toko from '../pages/Toko';
-import Dash from "../pages/Dash";
-import Dashtrans from "../pages/Dashtrans";
 import Newpass from "../pages/Newpass";
 import Newpassm from "../pages/Newpassm";
-import Transaksi from "../pages/Transaksi";
-import Transaksi2 from "../pages/Transaksi2";
 import Payment from '../Payment';
 import SimpanKeranjang from '../pages/SimpanKeranjang';
 import NotFound from '../pages/page404';
+import HalamanCrud from '../tabelcrud/halamanCrud';
+import AddUser from '../components/AddUser';
+import UserList from '../components/UserList';
+import EditUser from '../components/EditUser';
 
 const Routing = () => {
     const token = localStorage.getItem('Authorization');
@@ -62,14 +62,14 @@ const Routing = () => {
                 <Route path='/Artikel1' element={<Artikel1/>}></Route>
                 <Route path='/Artikel2' element={<Artikel2/>}></Route>
                 <Route path='/Artikel3' element={<Artikel3/>}></Route>
-                <Route path='/Dash' element={<Dash/>}></Route>
-                <Route path='/Dashtrans' element={<Dashtrans/>}></Route>
                 <Route path='/Newpass' element={<Newpass/>}></Route>
                 <Route path='/Newpassm' element={<Newpassm/>}></Route>
-                <Route path='/Transaksi' element={<Transaksi/>}></Route>
-                <Route path='/Transaksi2' element={<Transaksi2/>}></Route>
                 <Route path='/payment' element={<Payment/>}></Route>
                 <Route path='/simpanKeranjang' element={<SimpanKeranjang/>}></Route>
+                <Route path='/halamanCrud' element={<HalamanCrud/>}></Route>
+                <Route path='/AddUser' element={<AddUser/>}></Route>
+                <Route path='/UserList' element={<UserList/>}></Route>
+                <Route path='/EditUser/:1' element={<EditUser/>}></Route>
             {/* </Route> */}
         </Routes>
     );

@@ -11,6 +11,8 @@ import like from "../assets/like.png";
 import new_cards from "../data/dataToko";
 import { useParams } from "react-router-dom";
 import { useState, useEffect } from "react";
+import AOS from 'aos'; //aos link untuk animation
+import 'aos/dist/aos.css'; 
 
 const Toko = () => {
   const { url } = useParams();
@@ -50,13 +52,22 @@ const Toko = () => {
     console.log("New Subtotal:", newSubtotal); 
     setSubtotal(newSubtotal);
   };
+   // bagian inisialisasi
+   useEffect(() =>{
+    AOS.init({
+      once: true,
+      duration : 1000
+    }) 
+  }, [])
 
   return (
     <div>
       <Navbar />
-      <SearchButton data-aos="fade-up" />
-      <div className="mx-20">
-        <div
+      <div data-aos="fade-up">
+      <SearchButton  />
+      </div>
+      <div data-aos="fade-up" className="mx-20">
+        <div 
           style={{
             boxShadow: "0px 3px 4px rgba(0, 0, 0, 0.2)",
             borderRadius: "10px",
@@ -64,7 +75,7 @@ const Toko = () => {
           }}
           className="flex justify-between mt-10"
         >
-          <div className="flex">
+          <div  className="flex">
             <div style={{ margin: "10px" }}>
               <img
                 style={{ width: "150px", height: "150px", objectFit: "cover" }}
@@ -182,7 +193,7 @@ const Toko = () => {
           >
             <h3 className="pl-5 pb-5 pt-4">Daftar Layanan</h3>
             <Accordion>
-              <Accordion.Item style={{ border: "none" }} eventKey="0">
+              <Accordion.Item  style={{ border: "none" }} eventKey="0">
                 <Accordion.Header
                   style={{ boxShadow: "0px 4px 4px rgba(0, 0, 0, 0.2)" }}
                 >

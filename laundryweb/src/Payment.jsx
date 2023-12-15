@@ -6,7 +6,9 @@
  import Navbar from './components/Navbar';
  import Footer from './components/Footer';
  import { useEffect } from 'react';
- 
+ import AOS from 'aos'; //aos link untuk animation
+ import 'aos/dist/aos.css'; 
+
  const Payment = () => {
      const [name, setName] = useState("");
      const [order_id, setOrder_id] = useState("");
@@ -81,10 +83,19 @@
      }
    }, [])
  
+   // bagian inisialisasi
+   useEffect(() =>{
+    AOS.init({
+      once: true,
+      duration : 1000
+    }) 
+  }, [])
  
+
    return (
      <>
      <Navbar/>
+     <div data-aos="fade-up">
      <Box sx={{display: 'flex', flexDirection:'column', height:'100vh', width: '190vh', p: 4, marginBottom:'5%', fontSize:'16pt' }}>Silahkan di isi sesuai data pembayaran
      <TextField type="text" label='nama' value={name} onChange={(e) => setName(e.target.value)} sx={{mb: 2}}/>
      <TextField type="text" label="order ID"  value={order_id} onChange={(e) => setOrder_id(e.target.value)} sx={{mb: 2}}/>
@@ -94,6 +105,7 @@
          </Box>
      </Box>
      <Footer/>
+     </div>
      </>
    )
  }
