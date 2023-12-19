@@ -2,12 +2,8 @@
 import React from 'react';
 import logo from "../assets/logo.png";
 import GooglePlay from '../assets/GooglePlay.png';
-<<<<<<< HEAD
-import footer from './footer.css';
 import { Link } from 'react-router-dom';
-=======
 import '../components/footer.css';
->>>>>>> 2d5c0a7069036a32cda90e68e63e44432ff5792b
 
 const Footer = () => {
   return (

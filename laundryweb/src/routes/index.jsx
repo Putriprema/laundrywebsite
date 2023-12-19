@@ -16,9 +16,10 @@ import Artikel1 from '../pages/Artikel1';
 import Artikel2 from '../pages/Artikel2';
 import Artikel3 from '../pages/Artikel3';
 import Artikel from "../pages/Artikel";
-import Pelanggan from "../pages/auth/auth-form";
-import Loginmitra from "../pages/Loginmitra";
-import Signupmitra from "../pages/Signupmitra";
+import SignupPelanggan from "../pages/auth/SignupPelanggan";
+import LoginPelanggan from "../pages/auth/LoginPelanggan";
+import Loginmitra from "../pages/LoginMitra";
+import Signupmitra from "../pages/SignupMitra";
 import Pemulihan from '../pages/Pemulihan';
 import Toko from '../pages/Toko';
 import Newpass from "../pages/Newpass";
@@ -43,9 +44,10 @@ const Routing = () => {
             {/* Pubclic Routes */}
             <Route element={<PublicRoutes isLoggin={isLoggin} />}>
                 <Route path="/login-options" element={<LoginOptions />}/>
-                <Route path='/regis-login-pelanggan' element={<Pelanggan/>}></Route>
-                <Route path='/Login-mitra' element={<Loginmitra/>}></Route>
-                <Route path='/Sign-up-mitra' element={<Signupmitra/>}></Route>
+                <Route path='/regis-pelanggan' element={<SignupPelanggan/>}></Route>
+                <Route path='/login-pelanggan' element={<LoginPelanggan/>}></Route>
+                <Route path='/login-mitra' element={<Loginmitra/>}></Route>
+                <Route path='/regis-mitra' element={<Signupmitra/>}></Route>
                 <Route path='/Pemulihan' element={<Pemulihan/>}></Route>
             </Route>
             {/* Private Routes */}

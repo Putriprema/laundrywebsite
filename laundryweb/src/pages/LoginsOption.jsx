@@ -70,7 +70,7 @@ const Loginoption = () => {
 
           {/* pelanggan */}
           <div data-aos="zoom-in">
-            <Link to="/regis-login-pelanggan"><Button
+            <Link to="/regis-pelanggan"><Button
               variant="outline-info"
               className="ml-2 text-white"
               data-aos="zoom-in"
@@ -100,7 +100,7 @@ const Loginoption = () => {
 
           {/* mitra */}
           <div data-aos="zoom-in">
-            <Link to='/Sign-up-mitra'><Button
+            <Link to='/regis-mitra'><Button
               className="ml-2 text-white"
               variant="outline-warning"
               style={{

@@ -129,7 +129,7 @@ const CustomNavbar = ({ navValue }) => {
             <Link style={{color: 'white'}} to="/login-options">    
                 <>
               <Button
-              onClick={() => changeNavbarValue()}
+              // onClick={() => changeNavbarValue()}
               style={{
                 padding: '8px 35px',
                 borderRadius: '13px',
