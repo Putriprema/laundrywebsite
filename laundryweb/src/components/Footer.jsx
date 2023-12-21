@@ -11,7 +11,7 @@ const Footer = () => {
       <div className='sb_footer section_padding'>
         <div className='sb_footer-links'>
           <div className="logo-container">
-            <img src={logo} alt="Logo" /> {/* Menambahkan logo */}
+            <img src={logo} alt="Logo" /> 
           </div>
           <div className='sb_footer_nav'>
           <h1>Navigasi</h1>

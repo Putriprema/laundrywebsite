@@ -9,7 +9,6 @@ import 'aos/dist/aos.css'; //aos link untuk animation
 import { useEffect } from "react";
 
 const Riew = () => {
-     // bagian inisialisasi
      useEffect(() =>{
       AOS.init({
         once: true,

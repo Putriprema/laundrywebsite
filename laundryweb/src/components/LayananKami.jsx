@@ -11,7 +11,7 @@ import { useEffect } from "react";
 import { Link } from 'react-router-dom';
 const LayananKami = () => {
   
-   // bagian inisialisasi
+
    useEffect(() =>{
     AOS.init({
       once: true,
@@ -36,7 +36,7 @@ const LayananKami = () => {
             }} />
           </div>
           <Card.Body style={{ textAlign: 'center' }}>
-            <Card.Title style={{ fontWeight: 'bold' }}>Cuci Setrika</Card.Title>
+            <Card.Title style={{ fontWeight: 'bold' }}>Cuci Kering</Card.Title>
             <Button variant="primary" className="btn-lg">
             <a style={{ color: 'white', textDecoration:'none'}} href="/Layanan">Pilih</a>
             </Button>
@@ -74,7 +74,7 @@ const LayananKami = () => {
             }} />
           </div>
           <Card.Body style={{ textAlign: 'center' }}>
-            <Card.Title style={{ fontWeight: 'bold' }}>Cuci Setrika</Card.Title>
+            <Card.Title style={{ fontWeight: 'bold' }}>Cuci Kilat</Card.Title>
             <Button variant="primary" className="btn-lg">
             <a style={{ color: 'white', textDecoration:'none'}} href="/Layanan">Pilih</a>
             </Button>

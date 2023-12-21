@@ -19,7 +19,7 @@ const Loginoption = () => {
     e.target.style.transform = "scale(1)";
   };
 
-  // bagian inisialisasi
+ 
   useEffect(() => {
     AOS.init({
       once: true,

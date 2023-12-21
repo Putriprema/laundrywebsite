@@ -10,7 +10,7 @@ import { useEffect } from "react";
 
 const FAQ = () => {
    
-    // bagian inisialisasi
+
     useEffect(() =>{
       AOS.init({
         once: true,

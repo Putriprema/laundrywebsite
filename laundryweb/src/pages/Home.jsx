@@ -36,7 +36,7 @@ const Home = () => {
       setNavbarValue("nilai default"); 
     }, []);
   
-    // Fungsi untuk mengubah nilai Navbar
+
     const changeNavbarValue = () => {
       setNavbarValue("profile");
     }

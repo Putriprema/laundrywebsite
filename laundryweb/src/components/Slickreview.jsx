@@ -14,7 +14,7 @@ import {Link} from 'react-router-dom';
 
 function Informasi() {
 
-      // bagian inisialisasi
+ 
       useEffect(() =>{
         AOS.init({
           once: true,
@@ -58,15 +58,15 @@ function Informasi() {
       ]
     };
   
-    // Tambahkan style untuk ukuran slider dan kartu di dalamnya
+ 
     const sliderStyle = {
-      width: '100%', // Lebar slider 100%
-      height: 'auto', // Tinggi slider menyesuaikan konten
+      width: '100%', 
+      height: 'auto', 
     };
   
     const cardStyle = {
-      width: '50px', // Lebar kartu 50px
-      height: '100px', // Tinggi kartu 100px
+      width: '50px', 
+      height: '100px', 
     };
    
  

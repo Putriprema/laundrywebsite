@@ -10,7 +10,6 @@ import { useEffect } from "react";
 
 const Home1 = () => {
 
-   // bagian inisialisasi
    useEffect(() =>{
     AOS.init({
       once: true,
@@ -110,7 +109,6 @@ const Home1 = () => {
             margin: "0 10px",
           }}>
           {" "}
-          {/* Tambahkan margin di sini */}
           <div
             style={{
               display: "flex",

@@ -137,7 +137,7 @@ function loginpelanggan() {
                             }}
                         >
                                 <div style={{display: 'flex', flexDirection: 'column', alignItems: 'center', marginTop: '50px'}}>
-                                    <button className='btn btn-primary' type="submit" style={{borderRadius: '13px', boxShadow: '1px 3px 4px grey', width: '120px', marginBottom: '10px'}}>
+                                <button onClick={() => { window.location.href = '/'; }} className='btn btn-primary' style={{borderRadius: '13px', boxShadow: '1px 3px 4px grey', width: '120px', marginBottom: '10px'}}>
                                         Masuk
                                     </button>
                                     <div style={{textAlign: 'center'}}>

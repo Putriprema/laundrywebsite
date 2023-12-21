@@ -1,6 +1,6 @@
 .section-white {
     padding: 70px;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Contoh efek bayangan */
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); 
 }
 
 .team-item {
@@ -14,7 +14,7 @@
     -ms-transition: all 0.25s ease-in-out;
     -o-transition: all 0.25s ease-in-out;
     transition: all 0.25s ease-in-out;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Contoh efek bayangan */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); 
 }
 
 .team-item:hover {
@@ -80,23 +80,23 @@
     -webkit-border-radius: 50%;
     -moz-border-radius:50% ;
     border-radius: 50%;
-    display: block; /* Membuat gambar menjadi elemen block */
+    display: block; 
     margin: 0 auto;
 }
  
 ul.team-icon {
     margin-top: 25px;
-    list-style: none; /* Menghilangkan bullet points jika ada */
-    padding: 0; /* Menghilangkan padding bawaan dari daftar */
-    text-align: center; /* Mengatur agar isi berada di tengah */
+    list-style: none; 
+    padding: 0; 
+    text-align: center; 
 }
 
 ul.team-icon li {
     display: inline-block;
-    margin: 0 3px; /* Memberikan jarak antara elemen-elemen di dalamnya */
+    margin: 0 3px; 
 }
 
 ul.team-icon ion-icon {
-    font-size: 30px; /* Mengatur ukuran ikon menjadi 40px */
-    color: #00A1FF; /* Mengatur warna ikon menjadi cyan */
+    font-size: 30px; 
+    color: #00A1FF; 
 }

@@ -7,5 +7,5 @@ app.use(cors());
 app.use(express.json());
 app.use(UserRoute);
 
-// kalo ada port yang conflict krn port sama ubah disini
+// ubah port localhost disini dan mengecek server sudah running
 app.listen(4000, ()=> console.log('Server up and running...'));

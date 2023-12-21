@@ -14,7 +14,7 @@ import { useEffect } from "react";
 
 function Services() { 
 
-   // bagian inisialisasi
+
    useEffect(() =>{
     AOS.init({
       once: true,

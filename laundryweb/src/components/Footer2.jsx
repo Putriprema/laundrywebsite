@@ -1,6 +1,6 @@
 /* eslint-disable no-unused-vars */
 import React from 'react';
-import { Container, Navbar } from 'react-bootstrap'; // Pastikan import Container dan Navbar dari react-bootstrap
+import { Container, Navbar } from 'react-bootstrap';
 
 
 const Footer2 = () => {

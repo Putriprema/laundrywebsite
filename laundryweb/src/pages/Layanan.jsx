@@ -12,7 +12,7 @@ import { Link } from 'react-router-dom';
 
 const Layanan = () => {
 
-    // bagian inisialisasi
+
     useEffect(() =>{
       AOS.init({
         once: true,

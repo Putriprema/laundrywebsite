@@ -37,7 +37,7 @@ const Routing = () => {
     const isLoggin = token === null ? false : true;
     return (
         <Routes>
-            {/* kalo ada eror yang ga keliatan pagenya itu krn /homenya ygn belum ke isi/ atau ke refresh  */}
+           
             <Route path='/' element={<Home/>}></Route>
             <Route path='/home' element={<Home/>}></Route>
             <Route path="*" element={<NotFound />}/>
