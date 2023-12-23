@@ -11,8 +11,8 @@ router.post('/process-transaction', (req, res) => {
 
         const snap = new midtransClient.Snap({
             isProduction: false, 
-            serverKey: " ",
-            clientKey: " ",
+            serverKey: "a ",
+            clientKey: " b",
         })
         
         // harus sama kyk yg di Payment.jsx
