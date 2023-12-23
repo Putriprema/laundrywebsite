@@ -10,6 +10,7 @@ const Layanan = () => {
   return (
     <>
       <Navbar />
+      {/* editing button */}
       <button
         onClick={() => setIsOpen(prev => !prev)}
         className='bg-white p-4 w-11/12 flex ml-20 font-bold text-lg rounded-lg tracking-wider border-4 border-transparent active:border-white duration-300 active:text-white shadow-md'
@@ -24,6 +25,7 @@ const Layanan = () => {
       </button>
       {isOpen && (
         <div className='bg-white p-4 w-11/12 flex ml-20 font-bold text-lg rounded-lg tracking-wider border-4 border-transparent active:border-white duration-300 active:text-white shadow-md'>
+          {/* tambahin shadow */}
           <div>
             <h3 className='ml-1 text-black' style={{fontSize:'14pt'}}>
               Kami menawarkan berbagai jenis layanan, seperti cuci kilat, cuci kiloan, cuci kering, cuci setrika dll.
