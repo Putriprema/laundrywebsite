@@ -58,15 +58,16 @@ function Informasi() {
       ]
     };
   
- 
+
+    //editing bagian slider
     const sliderStyle = {
-      width: '100%', 
-      height: 'auto', 
+      width: '100%', //editing bagian lebar
+      height: 'auto', //editing bagian tinggi
     };
   
     const cardStyle = {
-      width: '50px', 
-      height: '100px', 
+      width: '50px', //editing bagian lebar
+      height: '100px', //editing bagian tinggi
     };
    
  

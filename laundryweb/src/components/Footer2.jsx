@@ -1,6 +1,6 @@
 /* eslint-disable no-unused-vars */
 import React from 'react';
-import { Container, Navbar } from 'react-bootstrap';
+import { Container, Navbar } from 'react-bootstrap'; //link dari boostrap
 
 
 const Footer2 = () => {

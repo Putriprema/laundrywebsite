@@ -50,6 +50,7 @@ const EditUser = () => {
       } 
     } catch (error) {
       console.error("Error fetching user data:", error);
+      //perbaikan
     }
   };
 

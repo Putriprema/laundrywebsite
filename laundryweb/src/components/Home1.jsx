@@ -70,7 +70,7 @@ const Home1 = () => {
             margin: "0 10px",
           }}>
           {" "}
-          {/* Tambahkan margin di sini */}
+          {/* editing margin di sini */}
           <div
             style={{
               display: "flex",
